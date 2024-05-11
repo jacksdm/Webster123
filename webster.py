@@ -215,7 +215,6 @@ def edit_cell():
     col_name = list(global_df.columns)[col]
     existing_content = global_df.iloc[row, col]
 
-    # Create a popup window for editing
     def save_edit():
         new_content = text.get("1.0", tk.END).strip()
         global_df.at[row, col_name] = new_content
@@ -223,26 +222,44 @@ def edit_cell():
         update_table()
         messagebox.showinfo("Edit Success", f"Successfully edited '{col_name}'")
 
-    def cancel_edit():
+    def cancel_edit(event=None):  # Optional event parameter for binding
         edit_window.destroy()
 
     edit_window = Toplevel(root)
     edit_window.title(f"Edit Cell: Row {row + 1}, Column {col_name}")
-    edit_window.geometry("600x400")
+    edit_window.geometry("640x600")
+    edit_window.grab_set()  # Keeps focus within the window
 
-    text = Text(edit_window, wrap="word")
+    text_frame = tk.Frame(edit_window)
+    text_frame.pack(fill="both", expand=True, padx=10, pady=10)
+
+    text = Text(text_frame, wrap="word")
     text.insert("1.0", existing_content)
-    text.pack(fill="both", expand=True)
+    text.pack(fill="both", expand=True, side="left")
 
-    scrollbar = Scrollbar(edit_window)
+    scrollbar = Scrollbar(text_frame, command=text.yview)
     scrollbar.pack(side="right", fill="y")
     text.config(yscrollcommand=scrollbar.set)
-    scrollbar.config(command=text.yview)
 
-    save_button = tk.Button(edit_window, text="Save", command=save_edit)
-    cancel_button = tk.Button(edit_window, text="Cancel", command=cancel_edit)
-    save_button.pack(pady=5, side="left", padx=20)
-    cancel_button.pack(pady=5, side="right", padx=20)
+    button_frame = tk.Frame(edit_window)
+    button_frame.pack(fill="x", expand=False, pady=10)  # Added pady for spacing
+
+    save_button = tk.Button(button_frame, text="Save", command=save_edit)
+    cancel_button = tk.Button(button_frame, text="Cancel", command=cancel_edit)
+    save_button.pack(side="left", padx=20, pady=5)
+    cancel_button.pack(side="right", padx=20, pady=5)
+
+    text.focus_set()  # Focuses the text widget to receive all key inputs
+
+    # Prevent Enter key from closing the window and allow new line insertion
+    def handle_return(event):
+        text.insert(tk.INSERT, "\n")
+        return "break"  # Stops the event from propagating further
+
+    text.bind('<Return>', handle_return)
+
+    edit_window.protocol("WM_DELETE_WINDOW", cancel_edit)  # Handles window close button click
+
 
 # Cell Clicked
 def cell_clicked(event):
@@ -278,6 +295,10 @@ frame = tk.Frame(root)
 frame.pack(fill="both", expand=True, pady=10)
 
 table = TableCanvas(frame)
+# Try to disable tooltips by modifying the _tooltip attribute
+if hasattr(table, '_tooltip'):
+    table._tooltip.destroy()
+    table._tooltip = None
 table.bind("<ButtonRelease-1>", cell_clicked)
 table.show()
 
