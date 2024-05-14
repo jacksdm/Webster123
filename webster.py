@@ -163,6 +163,11 @@ def load_csv():
         return
     try:
         global_df = pd.read_csv(file_path)
+        # Convert boolean columns to strings to display as 'True' or 'False'
+        bool_cols = ['directoryMode', 'useLinkBox', 'frontPage']
+        for col in bool_cols:
+            if col in global_df.columns:
+                global_df[col] = global_df[col].astype(str)
         global_df = global_df.applymap(lambda x: "" if pd.isna(x) else x)  # Replace NaN with empty strings
         update_table()
         messagebox.showinfo("CSV Loaded", "CSV file loaded successfully.")
@@ -297,7 +302,7 @@ edit_button.pack(side="left", padx=5, pady=5)
 frame = tk.Frame(root)
 frame.pack(fill="both", expand=True, pady=10)
 
-x_scrollbar = Scrollbar(frame, orient="horizontal")
+x_scrollbar = Scrollbar(frame, orient="horizontal", command=lambda *args: on_x_scroll(*args))
 x_scrollbar.grid(row=1, column=0, sticky='ew')
 
 y_scrollbar = Scrollbar(frame, orient="vertical")
@@ -315,11 +320,17 @@ frame.grid_rowconfigure(0, weight=0)
 frame.grid_columnconfigure(0, weight=0)
 
 # Adjust the scrolling behavior to scroll horizontally when needed
+def on_x_scroll(*args):
+    table.xview(*args)
+    table.redraw()
+
 def on_key_press(event):
     if event.keysym == 'Left':
         table.tablecolheader.canvas.xview_scroll(-1, "units")
+        table.redraw()  # Ensure redraw after scroll
     elif event.keysym == 'Right':
         table.tablecolheader.canvas.xview_scroll(1, "units")
+        table.redraw()  # Ensure redraw after scroll
 
 root.bind('<KeyPress>', on_key_press)
 
