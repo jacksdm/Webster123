@@ -17,6 +17,7 @@ def ensure_dir(folder_path):
 def write_html(content, filename):
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(content)
+
 def parse_line_numbers(line_numbers):
     result = []
     parts = line_numbers.split(',')
@@ -27,6 +28,7 @@ def parse_line_numbers(line_numbers):
         else:
             result.append(int(part) - 1)  # Convert to zero-based index
     return result
+
 # Generate HTML Content
 def generate_html_content(row):
     def check_nan(value):
@@ -85,6 +87,7 @@ def parse_line_numbers(line_numbers):
         else:
             result.append(int(part) - 1)  # Convert to zero-based index
     return result
+
 # Construct the file path for a given row
 def construct_file_path(row):
     folder_path = row['folderPath']
@@ -92,6 +95,7 @@ def construct_file_path(row):
     file_name = os.path.join(row['ourUrl'], "index") if directory_mode else row['ourUrl']
     file_extension = row.get('fileExtension', 'html')
     return os.path.join(folder_path, f"{file_name}.{file_extension}")
+
 # Publish Rows to Disk
 def publish_rows_to_disk(line_numbers):
     global global_df
@@ -260,7 +264,6 @@ def edit_cell():
 
     edit_window.protocol("WM_DELETE_WINDOW", cancel_edit)  # Handles window close button click
 
-
 # Cell Clicked
 def cell_clicked(event):
     global current_cell
@@ -294,12 +297,30 @@ edit_button.pack(side="left", padx=5, pady=5)
 frame = tk.Frame(root)
 frame.pack(fill="both", expand=True, pady=10)
 
-table = TableCanvas(frame)
-# Try to disable tooltips by modifying the _tooltip attribute
+x_scrollbar = Scrollbar(frame, orient="horizontal")
+x_scrollbar.grid(row=1, column=0, sticky='ew')
+
+y_scrollbar = Scrollbar(frame, orient="vertical")
+y_scrollbar.grid(row=0, column=1, sticky='ns')
+
+table = TableCanvas(frame, scrollbar=y_scrollbar, hscrollbar=x_scrollbar)
 if hasattr(table, '_tooltip'):
     table._tooltip.destroy()
     table._tooltip = None
 table.bind("<ButtonRelease-1>", cell_clicked)
-table.show()
+table.grid(row=0, column=0, sticky='nsew')
+
+# Configure grid weights to make the table expandable
+frame.grid_rowconfigure(0, weight=0)
+frame.grid_columnconfigure(0, weight=0)
+
+# Adjust the scrolling behavior to scroll horizontally when needed
+def on_key_press(event):
+    if event.keysym == 'Left':
+        table.tablecolheader.canvas.xview_scroll(-1, "units")
+    elif event.keysym == 'Right':
+        table.tablecolheader.canvas.xview_scroll(1, "units")
+
+root.bind('<KeyPress>', on_key_press)
 
 root.mainloop()
