@@ -8,6 +8,12 @@ import webbrowser
 global_df = None  # Global variable to store the DataFrame
 current_cell = None
 
+# Subclass to disable the tooltip
+class NoTooltipTableCanvas(TableCanvas):
+    def drawTooltip(self, row, col):
+        """Disable tooltip"""
+        return
+
 # Ensure directory creation
 def ensure_dir(folder_path):
     if not os.path.exists(folder_path):
@@ -308,10 +314,8 @@ x_scrollbar.grid(row=1, column=0, sticky='ew')
 y_scrollbar = Scrollbar(frame, orient="vertical")
 y_scrollbar.grid(row=0, column=1, sticky='ns')
 
-table = TableCanvas(frame, scrollbar=y_scrollbar, hscrollbar=x_scrollbar)
-if hasattr(table, '_tooltip'):
-    table._tooltip.destroy()
-    table._tooltip = None
+# Use the NoTooltipTableCanvas subclass to disable tooltips
+table = NoTooltipTableCanvas(frame, scrollbar=y_scrollbar, hscrollbar=x_scrollbar)
 table.bind("<ButtonRelease-1>", cell_clicked)
 table.grid(row=0, column=0, sticky='nsew')
 
