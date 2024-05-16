@@ -251,7 +251,7 @@ def edit_cell():
 
     edit_window = Toplevel(root)
     edit_window.title(f"Edit Cell: Row {row + 1}, Column {col_name}")
-    edit_window.geometry("840x400")
+    edit_window.geometry("640x500")
     edit_window.grab_set()  # Keeps focus within the window
 
     text_frame = tk.Frame(edit_window)
@@ -287,7 +287,7 @@ def edit_cell():
 # Main GUI Setup
 root = tk.Tk()
 root.title("Webster123")
-root.geometry("900x400")
+root.geometry("800x500")
 
 toolbar = tk.Frame(root)
 toolbar.pack(side="top", fill="x", pady=10)
