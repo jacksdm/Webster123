@@ -18,16 +18,16 @@ columns = [
 ]
 
 initial_data = {
-    "ourUrl": ["process-and-view-me"],
-    "folderPath": ["c:\webster123"],
+    "ourUrl": ["try"],
+    "folderPath": ["c:\\able"],
     "fileExtension": ["html"],
     "ourTitle": [""],
-    "ourContent": [f"""<center><h2>Congratulations!</h2><p>You've published your first page<br>Change it your html to get started.<br>Visit <a href="https://webster123.com/">Webster123.com</a> for instructions.</p></center>"""],
+    "ourContent": [""],
     "Extra1": [""],
     "Extra2": [""],
     "siteId": [""],
     "topMenu": [""],
-    "ourHeader": [f"""<img src="https://webster123.com/webster-logo-web.jpg">"""],
+    "ourHeader": [""],
     "ourFooter": [""],
     "directoryMode": ["False"],
     "shareImageUrl": [""],
@@ -56,7 +56,7 @@ column_config = {
     "ourContent": {"width": 100, "chars": 12, "instructions": "Html content"},
     "Extra1": {"width": 100, "chars": 12, "instructions": "Extra Html content"},
     "Extra2": {"width": 100, "chars": 12, "instructions": "Extra Html content"},
-    "siteId": {"width": 100, "chars": 12, "instructions": "Your site Id, Which site is this?"},
+    "siteId": {"width": 100, "chars": 12, "instructions": "Your site Id, For your benefit. Which site is this?"},
     "topMenu": {"width": 100, "chars": 12, "instructions": "Our menu entries are Anchor links stacked on top of each other."},
     "ourHeader": {"width": 100, "chars": 12, "instructions": "Html for the header of the website."},
     "ourFooter": {"width": 100, "chars": 12, "instructions": "Html for the Footer of our site."},
@@ -67,7 +67,7 @@ column_config = {
     "websiteUrl": {"width": 100, "chars": 12, "instructions": "Website URL. Must have trailing slash '/', like https://yoursite.com/"},
     "styleSheet": {"width": 100, "chars": 12, "instructions": "The url of your stylesheet"},
     "Icon": {"width": 100, "chars": 12, "instructions": "The website icon, usually 100x100px"},
-    "topHtml": {"width": 100, "chars": 12, "instructions": "Inserted after <html>"},
+    "topHtml": {"width": 100, "chars": 12, "instructions": "Inserted after <Html>"},
     "headTag": {"width": 100, "chars": 12, "instructions": "Inserted after <head>"},
     "ourShareButton": {"width": 100, "chars": 12, "instructions": "AddtoAny Share Button. Leave blank to not use."},
     "useLinkBox": {"width": 100, "chars": 12, "instructions": "If True, a Link To This Page Box will be added"},
@@ -122,7 +122,7 @@ class SimpleTable(tk.Canvas):
     def cut_selection(self):
         self.copy_selection()
         self.delete_selection(current_selection[0], current_selection[1])
-        
+        print("Selection cut")
 
     def create_cell(self, row, col, value):
         col_name = self.headers[col]
@@ -177,7 +177,8 @@ class SimpleTable(tk.Canvas):
         self.highlight_rows(shift_start_row, row)
         global current_selection
         current_selection = (min(shift_start_row, row), 0, max(shift_start_row, row), self.cols - 1)
-        
+        print(f"Row number {row + 1} clicked and rows from {shift_start_row + 1} to {row + 1} selected")
+
     def highlight_rows(self, start_row, end_row):
         for row in range(min(start_row, end_row), max(start_row, end_row) + 1):
             for col in range(self.cols):
@@ -214,7 +215,8 @@ class SimpleTable(tk.Canvas):
             self.clear_selection()
             self.highlight_cell(row, col)
             current_selection = (row, col, row, col)
-        
+        print(f"Table clicked at canvas coordinates ({x}, {y}) which maps to grid coordinates ({row}, {col})")
+
     def get_col_at_x(self, x):
         x_offset = 0
         for col, header in enumerate(self.headers):
@@ -234,16 +236,19 @@ class SimpleTable(tk.Canvas):
             row1, col1, row2, col2 = current_selection
             current_selection = (row1, col1, row, col)
             self.highlight_rectangle(row1, col1, row, col)
-        
+        print(f"Table dragged to canvas coordinates ({x}, {y}) which maps to grid coordinates ({row}, {col})")
+
     def on_drag_end(self, event):
         self.start_row = None
-        
+        print("Drag ended")
+
     def on_table_double_click(self, event):
         x, y = self.canvasx(event.x), self.canvasy(event.y)
         row, col = int(y // self.cell_height), self.get_col_at_x(x - self.row_number_width)
         if row >= 0 and col >= 0:
             self.edit_cell(row, col)
-        
+        print(f"Table double-clicked at canvas coordinates ({x}, {y}) which maps to grid coordinates ({row}, {col})")
+
     def on_table_right_click(self, event):
         x, y = self.canvasx(event.x), self.canvasy(event.y)
         row, col = int(y // self.cell_height), self.get_col_at_x(x - self.row_number_width)
@@ -319,7 +324,8 @@ class SimpleTable(tk.Canvas):
             row1, col1, row2, col2 = current_selection
             global_df.iloc[min(row1, row2):max(row1, row2) + 1, min(col1, col2):max(col1, col2) + 1] = ""
             update_table()
-            
+            print("Selection deleted")
+
     def copy_selection(self):
         global global_df, clipboard_data, current_selection
         if current_selection is not None:
@@ -330,7 +336,8 @@ class SimpleTable(tk.Canvas):
             else:
                 # Copy a range of cells
                 clipboard_data = global_df.iloc[min(row1, row2):max(row1, row2) + 1, min(col1, col2):max(col1, col2) + 1].copy()
-            
+            print("Selection copied")
+
     def paste_selection(self):
         global global_df, clipboard_data, current_selection
         if clipboard_data is not None and current_selection is not None:
@@ -349,7 +356,8 @@ class SimpleTable(tk.Canvas):
                     for col in range(min(col1, col2), max(col1, col2) + 1):
                         global_df.iat[row, col] = clipboard_data
             update_table()
-            
+            print("Selection pasted")
+
     def edit_cell(self, row, col):
         if self.edit_window is not None and self.edit_window.winfo_exists():
             self.edit_window.lift()  # Bring the existing edit window to the front
