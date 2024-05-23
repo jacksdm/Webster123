@@ -1,40 +1,41 @@
 ourUrl,folderPath,ourTitle,ourContent,Extra1,Extra2,siteId,topMenu,ourHeader,ourFooter,directoryMode,fileExtension,shareImageUrl,ourMeta,Website,websiteUrl,styleSheet,Icon,topHtml,headTag,ourShareButton,useLinkBox,frontPage
-index,d:\webster1,Webster123 The Fastest Websites Possible,"<div class=""row three-columns"">
+index,c:\webster123,Webster123 The Fastest Websites Possible,"<div class=""main"">
+<section class=""three-columns"">
     <div class=""column"">
-        <img src=""Website-Design.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+        <img src=""https://webster123.com/Website-Design.jpg"" alt="""" style=""width: 50%; height: auto;"" />
         <h3>Website Design Software</h3>
         <p>Webster123 is an innovative tool designed to streamline the process of creating static HTML pages. It offers a user-friendly interface that allows users to generate, edit, and maintain web pages with ease. Whether you are a beginner or an experienced web designer, Webster123 provides the necessary features and functionalities to design visually appealing and highly functional websites without the complexity of traditional CMS platforms.</p>
     </div>
 
     <div class=""column"">
-        <img src=""seo-clarksville-tn-2.png"" alt="""" style=""width: 50%; height: auto;"" />
+        <img src=""https://webster123.com/seo-clarksville-tn-2.png"" alt="""" style=""width: 50%; height: auto;"" />
         <h3>Web Designer Solution</h3>
         <p>Web pages are often slowed down by SQL databases when displaying static information. Webster123 eliminates this bottleneck by allowing you to create static HTML pages that are lightweight and fast. Combined with modern FTP technology, Webster123 ensures that these pages can be easily uploaded, maintained, and updated, making it an ideal solution for web designers seeking efficiency and speed.</p>
     </div>
 
     <div class=""column"">
-        <img src=""arrangements-2.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+        <img src=""https://webster123.com/arrangements-2.jpg"" alt="""" style=""width: 50%; height: auto;"" />
         <h3>Learn Html</h3>
         <p>Webster123 offers an excellent platform for learning and mastering HTML. Its straightforward approach allows users to quickly write and view HTML code, providing immediate feedback and results. This hands-on experience helps users understand the fundamentals of web development and improves their coding skills, making the learning process both efficient and enjoyable.</p>
     </div>
-</div>
-<div class=""row two-blocks"">
-    <div class=""block large"">
+</section>
+<section class=""two-columns"">
+    <div class=""wide-column"">
         <h3>Eliminate your webmaster CMS Headaches</h3>
         <p><em>“Webster123 can store multiple websites in one file”</em></p>
         <p>Updating WordPress for simple changes like a phone number can be cumbersome and prone to frequent downtime. If you manage multiple calling card sites, the maintenance can become overwhelming. Webster123 simplifies this process by storing multiple websites in a single spreadsheet-compatible file. This approach eliminates the need for complex CMS systems, reduces server load, and makes site management more straightforward and reliable.</p>
         <p>Hit it out of the park with Webster123</p>
     </div>
-    <div class=""block small"">
+    <div class=""narrow-column"">
         <img  src=""baberuth.jpg"" alt="""" style=""width: 85%; height: auto;"" />
     </div>
-</div>",,,Webster123,"<a href=""index.html"" aria-current=""page"">Webster123</a>
-<a href=""our-inputs.html"">Our Inputs</a>
-<a href=""screen-shots.html"">Screen Shots</a>
-<a href=""<a href=""getting-started.html"">Getting Started</a>","<a href=""index.htm""><img src=""webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,False,html,,,Webster123.com,https://webster123.com/,webster.css,https://clarksvilleweb.com/iconweb.jpg,"<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+</section></div>",,,Webster123,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.htm""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,FALSE,html,,,Webster123.com,https://webster123.com/,https://webster123.com/webster1.css,https://clarksvilleweb.com/iconweb.jpg,"<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
-",,,False,True
-our-inputs,d:\webster1,Our Inputs,"<h2>Our Inputs and What They Do</h2>
+",,,FALSE,TRUE
+our-inputs,c:\webster123,Our Inputs,"<h2>Our Inputs and What They Do</h2>
             <style>
         body {
             font-family: Arial, sans-serif;
@@ -184,24 +185,24 @@ our-inputs,d:\webster1,Our Inputs,"<h2>Our Inputs and What They Do</h2>
         <div class=""card"">
             <h2>frontPage</h2>
             <p>True or False. Indicates if this is the front page of the website. The front page is usually the main entry point and should be well-optimized.</p>
-           </div></div>",,,Webster123,"<a href=""index.html"" aria-current=""page"">Webster123</a>
-<a href=""our-inputs.html"">Our Inputs</a>
-<a href=""screen-shots.html"">Screen Shots</a>
-<a href=""<a href=""getting-started.html"">Getting Started</a>","<a href=""index.htm""><img src=""webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,False,html,,,Webster123.com,https://webster123.com/,webster.css,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+           </div></div>",,,Webster123,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.htm""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,FALSE,html,,,Webster123.com,https://webster123.com/,https://webster123.com/webster1.css,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
 <html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
-",,,False,False
-screen-shots,d:\webster1,Screenshots,"<img src=""screenshot1.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot1"">
-<img src=""screenshot2.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot2"">
-<img src=""screenshot4.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot4"">
-<img src=""screenshot3.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot3"">",,,Webster123,"<a href=""index.html"" aria-current=""page"">Webster123</a>
-<a href=""our-inputs.html"">Our Inputs</a>
-<a href=""screen-shots.html"">Screen Shots</a>
-<a href=""<a href=""getting-started.html"">Getting Started</a>","<a href=""index.htm""><img src=""webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,False,html,,,Webster123.com,https://webster123.com/,webster.css,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+",,,FALSE,FALSE
+screen-shots,c:\webster123,Screenshots,"<img src=""https://webster123.com/screenshot1.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot1"">
+<img src=""https://webster123.com/screenshot2.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot2"">
+<img src=""https://webster123.com/screenshot4.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot4"">
+<img src=""https://webster123.com/screenshot3.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot3"">",,,Webster123,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.htm""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,FALSE,html,,,Webster123.com,https://webster123.com/,https://webster123.com/webster1.css,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
 <html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
-",,,False,False
-getting-started,d:\webster1,Getting Started,"<h2>Welcome to Webster123!</h2>
+",,,FALSE,FALSE
+getting-started,c:\webster123,Getting Started,"<h2>Welcome to Webster123!</h2>
 <p>This tool allows you to generate static HTML pages, save them to your local drive so that you can ftp them to your site.<br>
 <h3>Simple Operation<h3></p>
 
@@ -245,24 +246,51 @@ getting-started,d:\webster1,Getting Started,"<h2>Welcome to Webster123!</h2>
 <li>ourFooter</li>
 </ul>
 Using Webster123 to learn makes html fun.
-</p></blockquote>",,,Webster123,"<a href=""index.html"" aria-current=""page"">Webster123</a>
-<a href=""our-inputs.html"">Our Inputs</a>
-<a href=""screen-shots.html"">Screen Shots</a>
-<a href=""<a href=""getting-started.html"">Getting Started</a>","<a href=""index.htm""><img src=""webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,False,html,,,Webster123.com,https://webster123.com/,webster.css,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+</p></blockquote>",,,Webster123,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.htm""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",This website crafted with Webster123,FALSE,html,,,Webster123.com,https://webster123.com/,https://webster123.com/webster1.css,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
 <html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
-",,,False,False
+",,,FALSE,FALSE
 ,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,x,,,,,,,,,,,,,,,,,,,,,
+index,c:\clarksvilletaps,"Trophies Awards and Plaques | Clarksville, Tn","    <div class=""row three-columns"">
+        <div class=""column""><img src=""https://clarksvilletaps.com/trophies.jpg"" alt=""trophies clarksville"" width=""175"" height=""175"" />
+<h3>Trophies</h3>
+<p>A trophy can be a lifetime reminder of the team, the event and the people with whom we shared the moments. It’s a reward for being a part of something. Our trophies are of the highest  quality and the years we have spent learning the engraving and mounting of presentation trophies can be your best foot forward in rewarding the team.</p></div>
+        <div class=""column""><img src=""https://clarksvilletaps.com/plaques.jpg"" alt=""plaques and awards clarksville"" width=""175"" height=""175"" />
+
+<h3>Awards and Plaques</h3>
+
+<p>A plaque is something we see on successful walls. It recognizes achievements in life as well as sports. Our product will last and is crafted with the finest woods, metals and other woods. Whatever the accomplishment, it can shine like the achievement itself.</p></div>
+        <div class=""column""><img src=""https://clarksvilletaps.com/engraving.jpg"" alt="""" width=""175"" height=""175""  />
+
+<h3>Custom Engraving</h3>
+
+<p>The engraver is trusted with the surface. A high level of skill is required to “Do it the old way”. That is the way that looks authentic. That authenticity is to be seen and treasured.</p></div>
+    </div></div>
+    <div class=""row two-blocks"">
+        <div class=""block large""><p>“Welcome to Clarksville Trophies, Awards, and Plaques (Clarksville TAPS)! <br> <blockquote><em>Before I started this business, I worked for many years with Ronnie Page at Clarksville Sporting Goods. Clarksville Trophies, Awards, and Plaques (Clarksville TAPS) offers you the same personable, quality service you have always relied on with some added options I believe you may find convenient. In addition to well-crafted products, you will now be able access digital options for bill payment plus we offer no-charge local delivery. I can also process purchase orders and accept paper checks if you’d prefer. Whatever your needs for trophies, awards, plaques, and other engraving, please call me at (931) 216-7678 or drop me an email at ClarksvilleTAPS@gmail.com. Should you be in the market for team uniforms, hats, screen printing, or embroidery, please contact Ronnie Page at (931) 801-2234</blockquote></em>...... Scott Jackson Owner</p></div>
+        <div class=""block small"" style=""vertical-align: middle;""><img src=""https://clarksvilletaps.com/recognition-awards.jpg"" alt="""" />
+
+</div>
+ 
+   ",,,ClarksvilleTaps,,"<p style=""background-image: url('https://clarksvilletaps.com/trophies-and-plaques-7.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; padding:10px;"">
+<a href=""https:clarksvilletaps.com""><img src=""https://clarksvilletaps.com/Trophies-awards-plaques-and-engraving-logo.jpg"" width=""200"" height=""60""  border=""0"" alt=""clarksville trophies, awards and plaques clarksville tn"" /></a><br><br>
+Recognize them with the best in engraving, quality, and presentation.<br>
+For awards and trophies<br> Call Scott Jackson <br> (931) 216-7678 today.</p>","<div class=""row three-columns"">
+        <div class=""column""><h3>Email:<br><a href=""mailto:clarksvilletaps@gmail.com"">clarksvilletaps@gmail.com</a></h3></div>
+        <div class=""column""><h3>Phone:<br><b>(931) 216-7678</b></h3></div>
+        <div class=""column""><a href=""https://www.facebook.com/ClarksvilleTAPS""><img src=""https://clarksvilletaps.com/followus.jpg"" alt=""follow us""></a></div>
+</div>",FALSE,html,,,clarksvilletaps.com,https://clarksvilletaps.com/,https://clarksvilleweb.com/cweb-2.css,https://clarksvilletaps.com/ctaps-icon2.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script>",,FALSE,FALSE
