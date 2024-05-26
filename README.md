@@ -1,6 +1,6 @@
 [Readme.txt](https://github.com/jacksdm/Webster123/files/15345271/Readme.txt)[UploadingWebster123: Revolutionizing Website Management
 Overview
-Webster123 is an innovative tool designed to simplify website management by generating static HTML  This approach offers a faster, more reliable, and efficient alternative to traditional dynamic CMS platforms like WordPress. By precomposing HTML pages, Webster123 eliminates the need for on-the-spot HTML generation and database calls, resulting in significant performance improvements and easier maintenance.
+Webster123 is the two button alternative to Wordpress. It basically puts a webpage on each line od a spreadsheet csv and serves a static html or php page on your computer without the internet. Webster123 is an innovative tool designed to simplify website management by generating static HTML  This approach offers a faster, more reliable, and efficient alternative to traditional dynamic CMS platforms like WordPress. By precomposing HTML pages, Webster123 eliminates the need for on-the-spot HTML generation and database calls, resulting in significant performance improvements and easier maintenance.
 
 The Problem with Traditional CMS
 Traditional Content Management Systems (CMS) like WordPress rely heavily on dynamic content generation. Each page request involves multiple calls to the database and on-the-fly HTML composition, which can lead to increased server load, slower page loads, and a greater risk of downtime. Managing multiple WordPress websites also means dealing with frequent plugin updates, password management, and backups, adding complexity and potential points of failure.
@@ -12,7 +12,7 @@ Speed: Static HTML pages load faster because they are precomposed and do not req
 
 Simplicity: Managing websites with Webster123 is straightforward. A single CSV file contains all the necessary information to generate multiple static HTML pages. This simplicity reduces the overhead associated with managing dynamic CMS platforms.
 
-Reliability: Static HTML pages are less prone to errors and downtime compared to dynamically generated content. Since there are no databases or complex backend processes involved, the risk of website failures is significantly reduced.
+Reliability: Static HTML pages are less prone to errors and downtime compared to dynamically generated content. Since there are no databases or complex backend processes involved, the risk of website failures is significantly reduced. Your Wordpress sites will go down and your Webster sites will still be up. It's better to store a hundred websites on one sheet that to visit a hundred Wordpress dashboards, and maintain them.
 
 Efficiency: By eliminating the need for real-time database interactions, server load is drastically reduced. This leads to lower hosting costs and improved scalability, making it easier to manage a large number of websites.
 
