@@ -9,25 +9,25 @@ current_selection = None
 clipboard_data = None
 shift_start_row = None  # Variable to store the starting row for shift-click selection
 
-# Define the column order and initial values
+# Define the column order
 columns = [
-    "ourUrl", "folderPath", "ourTitle", "ourContent", "Extra1",
-    "Extra2", "siteId", "topMenu", "ourHeader", "ourFooter", "directoryMode",
-    "fileExtension", "shareImageUrl", "ourMeta", "Website", "websiteUrl", "styleSheet", "Icon",
-    "topHtml", "headTag", "ourShareButton", "useLinkBox", "frontPage"
+    "siteId", "folderPath", "ourUrl", "ourTitle", "ourContent", "Extra1", "Extra2","topMenu",
+    "ourHeader", "ourFooter", "styleSheet", "scriptsUrl", "fileExtension", "ourMeta", "shareImageUrl",
+    "Website", "websiteUrl","Icon", "topHtml", "headTag", "ourShareButton", "useLinkBox", "directoryMode", "frontPage"
 ]
-
+# Define initial values
 initial_data = {
-    "ourUrl": ["try"],
-    "folderPath": ["c:\\able"],
+    "ourUrl": ["publish-and-view-me"],
+    "folderPath": ["c:\\webster123"],
     "fileExtension": ["html"],
+    "scriptsUrl": [""],
     "ourTitle": [""],
-    "ourContent": [""],
+    "ourContent": [f"""<center><h2>Congratulations!</h2><p>You've published your first page. <br>Change it your html to get started.<br>Visit <a href="https://webster123.com/">Webster123.com</a> for instructions.</p></center>"""],
     "Extra1": [""],
     "Extra2": [""],
-    "siteId": [""],
+    "siteId": ["My Site"],
     "topMenu": [""],
-    "ourHeader": [""],
+    "ourHeader": [f"""<img src="https://webster123.com/webster-logo-web.jpg">"""],
     "ourFooter": [""],
     "directoryMode": ["False"],
     "shareImageUrl": [""],
@@ -43,20 +43,20 @@ initial_data = {
     "frontPage": ["False"]
 }
 
-# Add 20 extra empty rows
-for _ in range(20):
+# Add 30 extra empty rows
+for _ in range(30):
     for key in initial_data.keys():
         initial_data[key].append("")
 
 column_config = {
     "ourUrl": {"width": 220, "chars": 24, "instructions": "Words with a dash between them, no special characters"},
-    "folderPath": {"width": 100, "chars": 12, "instructions": "The folder on your local where you wish to store the pages you create. Like C:\webster123"},
+    "folderPath": {"width": 100, "chars": 12, "instructions": "The folder on your local where you wish to store the pages you create. Like C:\\webster123"},
     "fileExtension": {"width": 100, "chars": 12, "instructions": "html or php"},
     "ourTitle": {"width": 100, "chars": 12, "instructions": "The title of your web page."},
     "ourContent": {"width": 100, "chars": 12, "instructions": "Html content"},
     "Extra1": {"width": 100, "chars": 12, "instructions": "Extra Html content"},
     "Extra2": {"width": 100, "chars": 12, "instructions": "Extra Html content"},
-    "siteId": {"width": 100, "chars": 12, "instructions": "Your site Id, For your benefit. Which site is this?"},
+    "siteId": {"width": 100, "chars": 12, "instructions": "Your site Id, Which site is this?"},
     "topMenu": {"width": 100, "chars": 12, "instructions": "Our menu entries are Anchor links stacked on top of each other."},
     "ourHeader": {"width": 100, "chars": 12, "instructions": "Html for the header of the website."},
     "ourFooter": {"width": 100, "chars": 12, "instructions": "Html for the Footer of our site."},
@@ -65,17 +65,18 @@ column_config = {
     "ourMeta": {"width": 100, "chars": 12, "instructions": "The meta Description of your page."},
     "Website": {"width": 100, "chars": 12, "instructions": "yoursite.com"},
     "websiteUrl": {"width": 100, "chars": 12, "instructions": "Website URL. Must have trailing slash '/', like https://yoursite.com/"},
-    "styleSheet": {"width": 100, "chars": 12, "instructions": "The url of your stylesheet"},
+    "styleSheet": {"width": 100, "chars": 12, "instructions": "The url of your stylesheet file. On your local drive it can look like file:///c:/Stylesheets/mystylesheet.css This way you can work with a stylesheet on your drive. When you publish the page on the internet, you can change it to something like https://mysite.com/mystylesheet.css"},
     "Icon": {"width": 100, "chars": 12, "instructions": "The website icon, usually 100x100px"},
-    "topHtml": {"width": 100, "chars": 12, "instructions": "Inserted after <Html>"},
+    "topHtml": {"width": 100, "chars": 12, "instructions": "Inserted after <html>"},
     "headTag": {"width": 100, "chars": 12, "instructions": "Inserted after <head>"},
     "ourShareButton": {"width": 100, "chars": 12, "instructions": "AddtoAny Share Button. Leave blank to not use."},
     "useLinkBox": {"width": 100, "chars": 12, "instructions": "If True, a Link To This Page Box will be added"},
-    "frontPage": {"width": 100, "chars": 12, "instructions": "If True then this is the front page of the website. This affects our canonical url. If this is True then ourUrl needs to be index"}
+    "scriptsUrl": {"width": 100, "chars": 12, "instructions": "The url of your java script file. On your local drive it can look like file:///c:/Scriptsfolder/myscript.js This way you can work with a script on your drive. When you publish the page on the internet, you can change it to something like https://mysite.com/myscript.js"}
+
 }
 
 class SimpleTable(tk.Canvas):
-    def __init__(self, parent, rows=10, cols=5, font_size=10):
+    def __init__(self, parent, rows=10, cols=5, font_size=10, cell_height=25):
         super().__init__(parent)
         self.parent = parent
         self.rows = rows
@@ -87,7 +88,10 @@ class SimpleTable(tk.Canvas):
         self.row_number_width = 50
         self.font_size = font_size
         self.font = font.Font(size=font_size)
-        self.cell_height = self.font.metrics("linespace") + 10
+        
+        # Set a fixed cell height
+        self.cell_height = cell_height
+        
         self.selection_rects = []
         self.start_row = None
         self.edit_window = None  # Track the edit window
@@ -122,7 +126,6 @@ class SimpleTable(tk.Canvas):
     def cut_selection(self):
         self.copy_selection()
         self.delete_selection(current_selection[0], current_selection[1])
-        print("Selection cut")
 
     def create_cell(self, row, col, value):
         col_name = self.headers[col]
@@ -177,7 +180,6 @@ class SimpleTable(tk.Canvas):
         self.highlight_rows(shift_start_row, row)
         global current_selection
         current_selection = (min(shift_start_row, row), 0, max(shift_start_row, row), self.cols - 1)
-        print(f"Row number {row + 1} clicked and rows from {shift_start_row + 1} to {row + 1} selected")
 
     def highlight_rows(self, start_row, end_row):
         for row in range(min(start_row, end_row), max(start_row, end_row) + 1):
@@ -215,7 +217,6 @@ class SimpleTable(tk.Canvas):
             self.clear_selection()
             self.highlight_cell(row, col)
             current_selection = (row, col, row, col)
-        print(f"Table clicked at canvas coordinates ({x}, {y}) which maps to grid coordinates ({row}, {col})")
 
     def get_col_at_x(self, x):
         x_offset = 0
@@ -236,18 +237,15 @@ class SimpleTable(tk.Canvas):
             row1, col1, row2, col2 = current_selection
             current_selection = (row1, col1, row, col)
             self.highlight_rectangle(row1, col1, row, col)
-        print(f"Table dragged to canvas coordinates ({x}, {y}) which maps to grid coordinates ({row}, {col})")
 
     def on_drag_end(self, event):
         self.start_row = None
-        print("Drag ended")
 
     def on_table_double_click(self, event):
         x, y = self.canvasx(event.x), self.canvasy(event.y)
         row, col = int(y // self.cell_height), self.get_col_at_x(x - self.row_number_width)
         if row >= 0 and col >= 0:
             self.edit_cell(row, col)
-        print(f"Table double-clicked at canvas coordinates ({x}, {y}) which maps to grid coordinates ({row}, {col})")
 
     def on_table_right_click(self, event):
         x, y = self.canvasx(event.x), self.canvasy(event.y)
@@ -305,6 +303,8 @@ class SimpleTable(tk.Canvas):
         menu.add_command(label="Insert Row", command=lambda: self.insert_row(row))
         menu.add_command(label="Delete Row", command=lambda: self.delete_row(row))
         menu.add_command(label="Copy Selection", command=self.copy_selection)
+        menu.add_command(label="Publish Selected Rows", command=self.publish_selected_rows)
+        menu.add_command(label="View Selected Rows", command=self.view_selected_rows)
         menu.post(event.x_root, event.y_root)
 
     def insert_row(self, row):
@@ -324,7 +324,6 @@ class SimpleTable(tk.Canvas):
             row1, col1, row2, col2 = current_selection
             global_df.iloc[min(row1, row2):max(row1, row2) + 1, min(col1, col2):max(col1, col2) + 1] = ""
             update_table()
-            print("Selection deleted")
 
     def copy_selection(self):
         global global_df, clipboard_data, current_selection
@@ -336,7 +335,6 @@ class SimpleTable(tk.Canvas):
             else:
                 # Copy a range of cells
                 clipboard_data = global_df.iloc[min(row1, row2):max(row1, row2) + 1, min(col1, col2):max(col1, col2) + 1].copy()
-            print("Selection copied")
 
     def paste_selection(self):
         global global_df, clipboard_data, current_selection
@@ -356,7 +354,6 @@ class SimpleTable(tk.Canvas):
                     for col in range(min(col1, col2), max(col1, col2) + 1):
                         global_df.iat[row, col] = clipboard_data
             update_table()
-            print("Selection pasted")
 
     def edit_cell(self, row, col):
         if self.edit_window is not None and self.edit_window.winfo_exists():
@@ -448,6 +445,22 @@ class SimpleTable(tk.Canvas):
         self.row_number_canvas.yview(*args)
         self.update_scroll_region()
 
+    def publish_selected_rows(self):
+        global current_selection
+        if current_selection is not None:
+            row1, col1, row2, col2 = current_selection
+            rows_to_publish = list(range(min(row1, row2) + 1, max(row1, row2) + 2))
+            result = publish_rows_to_disk(",".join(map(str, rows_to_publish)))
+            messagebox.showinfo("Publish Result", result)
+
+    def view_selected_rows(self):
+        global current_selection
+        if current_selection is not None:
+            row1, col1, row2, col2 = current_selection
+            rows_to_view = list(range(min(row1, row2) + 1, max(row1, row2) + 2))
+            result = view_html_pages(",".join(map(str, rows_to_view)))
+            messagebox.showinfo("View Result", result)
+
 # Ensure directory creation
 def ensure_dir(folder_path):
     if not os.path.exists(folder_path):
@@ -495,27 +508,45 @@ def generate_html_content(row):
             }}
         </script>"""
 
-    return f"""<html><head>
-        <title>{check_nan(row['ourTitle'])}</title>
-        <meta name="description" content="{check_nan(row['ourMeta'])}">
-        <link rel="canonical" href="{canonical_url}">
-        <link rel="icon" href="{check_nan(row['Icon'])}" sizes="32x32">
-        <link rel="stylesheet" href="{check_nan(row['styleSheet'])}">
-        <meta property="og:title" content="{check_nan(row['ourTitle'])}">
-        <meta property="og:url" content="{canonical_url}">
-        <meta property="og:image" content="{check_nan(row['shareImageUrl'])}">
-        <meta property="og:description" content="{check_nan(row['ourTitle'])}">
-    </head><body>
-        <div class="header">{check_nan(row['ourHeader'])}</div>
-        <div class="topnav" id="myTopnav">{check_nan(row['topMenu'])}</div>
-        <div class="content">
-            <h2>{check_nan(row['ourTitle'])}</h2>
-            {full_content}
-            {link_box_html}
-            {check_nan(row['ourShareButton'])}
-        </div>
-        <div class="footer">{check_nan(row['ourFooter'])}</div>
-    </body></html>"""
+    return f"""<html>
+<head>
+    <title>{check_nan(row['ourTitle'])}</title>
+    <meta name="description" content="{check_nan(row['ourMeta'])}">
+    <meta charset="UTF-8">
+    <script src="{check_nan(row['scriptsUrl'])}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{canonical_url}">
+    <link rel="icon" href="{check_nan(row['Icon'])}" sizes="32x32">
+    <link rel="stylesheet" href="{check_nan(row['styleSheet'])}">
+    <meta property="og:title" content="{check_nan(row['ourTitle'])}">
+    <meta property="og:url" content="{canonical_url}">
+    <meta property="og:image" content="{check_nan(row['shareImageUrl'])}">
+    <meta property="og:description" content="{check_nan(row['ourTitle'])}">
+</head>
+<body>
+    <div class="header">{check_nan(row['ourHeader'])}</div>
+    <div class="topnav" id="myTopnav">{check_nan(row['topMenu'])}<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></div>
+    <div class="content">
+        <h2>{check_nan(row['ourTitle'])}</h2>
+        {full_content}
+        {link_box_html}
+        {check_nan(row['ourShareButton'])}
+    </div>
+    <div class="footer">{check_nan(row['ourFooter'])}</div>
+    <a href="https://webster123.com/"><img src="https://webster123.com/insignia2.jpg"></a>
+    <script>
+        function myFunction() {{
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {{
+                x.className += " responsive";
+            }} else {{
+                x.className = "topnav";
+            }}
+        }}
+    </script>
+</body>
+</html>"""
+
 
 # Construct the file path for a given row
 def construct_file_path(row):
@@ -570,7 +601,7 @@ def view_html_pages(line_numbers=None):
 
         for index in lines_to_open:
             if index < len(global_df):
-                row = global_df.iloc[index]
+                row = global_df.iloc(index)
                 file_path = construct_file_path(row)
                 files_to_open.append(file_path)
 
@@ -601,12 +632,30 @@ def load_csv():
         
         # Ensure columns are in the predefined order
         global_df = global_df.reindex(columns=columns)
-
+        
+        # Add extra empty rows if necessary to make sure there are at least 21 rows
+        if len(global_df) < 21:
+            extra_rows = 21 - len(global_df)
+            empty_rows = pd.DataFrame({col: [""] * extra_rows for col in columns})
+            global_df = pd.concat([global_df, empty_rows], ignore_index=True)
+        
         # Load the entire table to make all rows scrollable
         update_table()
-        messagebox.showinfo("CSV Loaded", "CSV file loaded successfully.")
     except Exception as e:
         messagebox.showerror("Load Error", f"Failed to load CSV: {str(e)}")
+
+# Update Table
+def update_table(rows_to_display=None):
+    global global_df
+    if global_df is not None:
+        if rows_to_display is not None:
+            data = global_df.head(rows_to_display).fillna("").values.tolist()
+        else:
+            data = global_df.fillna("").values.tolist()
+        column_names = global_df.columns.tolist()
+        table.load_data(data, column_names)
+        table.update_scroll_region()
+
 
 # Save CSV
 def save_csv():
@@ -623,18 +672,6 @@ def save_csv():
     except Exception as e:
         messagebox.showerror("Save Error", f"Failed to save CSV: {str(e)}")
 
-# Update Table
-def update_table(rows_to_display=None):
-    global global_df
-    if global_df is not None:
-        if rows_to_display is not None:
-            data = global_df.head(rows_to_display).fillna("").values.tolist()
-        else:
-            data = global_df.fillna("").values.tolist()
-        column_names = global_df.columns.tolist()
-        table.load_data(data, column_names)
-        table.update_scroll_region()
-
 # Process Button Action
 def process_button_action():
     row_numbers = simpledialog.askstring("Rows to Process", "Enter rows to process (e.g., 0-2,4,6-8):")
@@ -649,15 +686,6 @@ def open_button_action():
         result = view_html_pages(row_numbers)
         messagebox.showinfo("Open Result", result)
 
-# Edit Cell Action
-def edit_cell_action():
-    global current_selection
-    if current_selection is None:
-        messagebox.showwarning("No Cell", "Please select a cell to edit.")
-        return
-    row1, col1, row2, col2 = current_selection
-    table.edit_cell(row1, col1)
-
 # Main GUI Setup
 root = tk.Tk()
 root.title("Webster123")
@@ -671,15 +699,6 @@ load_button.pack(side="left", padx=5, pady=5)
 
 save_button = tk.Button(toolbar, text="Save CSV", command=save_csv)
 save_button.pack(side="left", padx=5, pady=5)
-
-process_button = tk.Button(toolbar, text="Publish Rows to Disk", command=process_button_action)
-process_button.pack(side="left", padx=5, pady=5)
-
-open_button = tk.Button(toolbar, text="View Html Pages", command=open_button_action)
-open_button.pack(side="left", padx=5, pady=5)
-
-edit_button = tk.Button(toolbar, text="Edit Cell", command=edit_cell_action)
-edit_button.pack(side="left", padx=5, pady=5)
 
 frame = tk.Frame(root)
 frame.pack(fill="both", expand=True, pady=10)
