@@ -12,7 +12,7 @@ Speed: Static HTML pages load faster because they are precomposed and do not req
 
 Simplicity: Managing websites with Webster123 is straightforward. A single CSV file contains all the necessary information to generate multiple static HTML pages. This simplicity reduces the overhead associated with managing dynamic CMS platforms.
 
-Reliability: Static HTML pages are less prone to errors and downtime compared to dynamically generated content. Since there are no databases or complex backend processes involved, the risk of website failures is significantly reduced. Your Wordpress sites will go down and your Webster sites will still be up. It's better to store a hundred websites on one sheet that to visit a hundred Wordpress dashboards, and maintain them.
+Reliability: Static HTML pages are less prone to errors and downtime compared to dynamically generated content. Since there are no databases or complex backend processes involved, the risk of website failures is significantly reduced. Your Wordpress sites will go down and your Webster sites will still be up. It's better to store a hundred websites on one sheet than to visit a hundred Wordpress dashboards, and maintain them. Webster 123 has already published thousands of web pages.
 
 Efficiency: By eliminating the need for real-time database interactions, server load is drastically reduced. This leads to lower hosting costs and improved scalability, making it easier to manage a large number of websites.
 
