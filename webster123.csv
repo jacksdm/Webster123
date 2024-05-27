@@ -35,188 +35,203 @@ Webster123,d:\webster123,index,Webster123 The Fastest Websites Possible,"<div cl
 <a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
 ",,,False,False,True
-Webster123,d:\webster123,our-inputs,Our Inputs,"<h2>Our Inputs and What They Do</h2>
-            <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .card {
-            flex: 1 1 300px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 16px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        .card h2 {
-            margin-top: 0;
-            font-size: 1.2em;
-        }
-        .comment {
-            color: #555;
-            font-size: 0.9em;
-        }
-        @media (max-width: 600px) {
-            .card {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
-    <h1>Webster123 Variables</h1>
-    <p>This document provides detailed information on the various variables used in the Webster123 program, along with elaborated comments to help understand their purpose and usage.</p>
-    <div class=""container"">
-        <div class=""card"">
-            <h2>ourUrl</h2>
-            <p>Commonly known as the slug. It should consist of lowercase words with dashes between them. This is the part of the URL that uniquely identifies the web page.</p>
-            <p class=""comment"">For example, ""web-page-example"" can be a valid slug.</p>
+Webster123,d:\webster123,our-inputs,Our Inputs,"<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.comment {
+    color: #555;
+    font-size: 0.9em;
+}
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+</style>
+<h1>Webster123 Variables</h1>
+<p>This document provides detailed information on the various variables used in the Webster123 program, along with elaborated comments to help understand their purpose and usage.</p>
+<div class=""container"">
+    <div class=""card"">
+        <h2>siteId</h2>
+        <p>The identifier for the site. This can be used to distinguish between different sites managed by Webster123.</p>
+        <p class=""comment"">Choose a unique identifier for each site.</p>
+    </div>
+    <div class=""card"">
+        <h2>folderPath</h2>
+        <p>The local folder in which to store the webpage. This defines the directory structure for saving the HTML files.</p>
+        <p class=""comment"">Organize your folder structure for easy access and maintenance.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourUrl</h2>
+        <p>Commonly known as the slug. It should consist of lowercase words with dashes between them. This is the part of the URL that uniquely identifies the web page.</p>
+        <p class=""comment"">For example, ""web-page-example"" can be a valid slug.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourTitle</h2>
+        <p>The Title of the web page. This is what appears in the browser tab and is important for SEO and usability.</p>
+        <p class=""comment"">A concise, descriptive title like ""About Us - Webster123"" works well.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourContent</h2>
+        <p>The HTML content of the page as provided by the user. This field should contain all the necessary HTML markup to render the main content of the page.</p>
+        <p class=""comment"">Ensure the HTML is well-structured and valid to avoid rendering issues.</p>
         </div>
-        <div class=""card"">
-            <h2>ourTitle</h2>
-            <p>The Title of the web page. This is what appears in the browser tab and is important for SEO and usability.</p>
-            <p class=""comment"">A concise, descriptive title like ""About Us - Webster123"" works well.</p>
-        </div>
-        <div class=""card"">
-            <h2>ourContent</h2>
-            <p>The HTML content of the page as provided by the user. This field should contain all the necessary HTML markup to render the main content of the page.</p>
-            <p class=""comment"">Ensure the HTML is well-structured and valid to avoid rendering issues.</p>
-        </div>
-        <div class=""card"">
-            <h2>Extra1</h2>
-            <p>Extra HTML content that can be included on the page. This is an optional field for additional HTML snippets.</p>
-            <p class=""comment"">Use this field for supplementary content such as sidebars or additional sections.</p>
-        </div>
-        <div class=""card"">
-            <h2>Extra2</h2>
-            <p>Extra HTML content that can be included on the page. Similar to Extra1, this field provides space for more additional HTML content.</p>
-            <p class=""comment"">Utilize this for any further content that supports the main content.</p>
-        </div>
-        <div class=""card"">
-            <h2>shareImageUrl</h2>
-            <p>The URL of the share image for the webpage. This image is used when the page is shared on social media platforms.</p>
-            <p class=""comment"">Ensure the image is of appropriate size and quality for sharing.</p>
-        </div>
-        <div class=""card"">
-            <h2>siteId</h2>
-            <p>The identifier for the site. This can be used to distinguish between different sites managed by Webster123.</p>
-            <p class=""comment"">Choose a unique identifier for each site.</p>
-        </div>
-        <div class=""card"">
-            <h2>ourShareButton</h2>
-            <p>A cell in which an ""Add to Any"" share button can be added. This facilitates easy sharing of the webpage.</p>
-            <p class=""comment"">Include this button to increase the page's shareability.</p>
-        </div>
-        <div class=""card"">
-            <h2>topMenu</h2>
-            <p>The menu of the webpage. Entries are designated by the user to navigate different sections or pages.</p>
-            <p class=""comment"">Design the menu to enhance user navigation and experience.</p>
-        </div>
-        <div class=""card"">
-            <h2>ourHeader</h2>
-            <p>HTML for the header of the webpage. This section typically includes the site logo, navigation links, and other important elements.</p>
-            <p class=""comment"">Keep the header consistent across all pages for better branding.</p>
-        </div>
-        <div class=""card"">
-            <h2>ourFooter</h2>
-            <p>HTML for the footer of the webpage. This section usually contains contact information, copyright details, and additional links.</p>
-            <p class=""comment"">Ensure the footer provides useful information and links to key areas of the site.</p>
-        </div>
-        <div class=""card"">
-            <h2>ourMeta</h2>
-            <p>Meta statement for the webpage. This includes meta tags that provide metadata about the HTML document, such as description, keywords, and author.</p>
-            <p class=""comment"">Use meta tags to improve SEO and provide better context to search engines.</p>
-        </div>
-        <div class=""card"">
-            <h2>folderPath</h2>
-            <p>The local folder in which to store the webpage. This defines the directory structure for saving the HTML files.</p>
-            <p class=""comment"">Organize your folder structure for easy access and maintenance.</p>
-        </div>
-        <div class=""card"">
-            <h2>Website</h2>
-            <p>The dotcom name of your website, such as yoursite.com. This is the main address of your website.</p>
-            <p class=""comment"">Choose a memorable and relevant domain name for your site.</p>
-        </div>
-        <div class=""card"">
-            <h2>websiteUrl</h2>
-            <p>The URL of the website (includes trailing /). Example: https://yoursite.com/. This is the base URL used for constructing links within the site.</p>
-            <p class=""comment"">Ensure the URL is correct and includes the trailing slash.</p>
-        </div>
-        <div class=""card"">
-            <h2>styleSheet</h2>
-            <p>The URL of your stylesheet. Relative addressing can be used. This stylesheet controls the visual presentation of the site.</p>
-            <p class=""comment"">Use a well-structured stylesheet to maintain consistent styling across the site.</p>
-        </div>
-        <div class=""card"">
-            <h2>Icon</h2>
-            <p>The URL of your icon. Relative addressing can be used. This icon is typically the favicon displayed in the browser tab.</p>
-            <p class=""comment"">Ensure the icon is appropriately sized and formatted.</p>
-        </div>
-        <div class=""card"">
-            <h2>fileExtension</h2>
-            <p>The file extension of the pages. Examples are html, htm, asp, php. This defines the format of the generated web pages.</p>
-            <p class=""comment"">Choose the correct file extension based on your server and requirements.</p>
-        </div>
-        <div class=""card"">
-            <h2>topHtml</h2>
-            <p>HTML to be added just after the <code>&lt;html&gt;</code> tag of the page. This section can include high-level elements like metadata or external scripts.</p>
-            <p class=""comment"">Include any global scripts or styles here.</p>
-        </div>
-        <div class=""card"">
-            <h2>headTag</h2>
-            <p>HTML to be added just after the <code>&lt;head&gt;</code> tag of the page. This can include additional metadata, scripts, or styles specific to the page.</p>
-            <p class=""comment"">Customize the head tag content for each page as needed.</p>
-        </div>
-        <div class=""card"">
-            <h2>directoryMode</h2>
-            <p>True or False. The directory mode determines if the page should be saved in a directory with an index.html file or as a standalone HTML file.</p>
-            <p class=""comment"">Use directory mode for better organization and cleaner URLs.</p>
-        </div>
-        <div class=""card"">
-            <h2>useLinkBox</h2>
-            <p>True or False. Adds a ""Link to this page"" block, facilitating easy sharing and linking to the page.</p>
-            <p class=""comment"">Enable this feature to promote sharing of your content.</p>
-        </div>
-        <div class=""card"">
-            <h2>frontPage</h2>
-            <p>True or False. Indicates if this is the front page of the website. The front page is usually the main entry point and should be well-optimized.</p>
-           </div></div>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+    <div class=""card"">
+        <h2>Extra1</h2>
+        <p>Ex                                                                                                                       tra HTML content that can be included on the page. This is an optional field for additional HTML snippets.</p>
+        <p class=""comment"">Use this field for supplementary content such as sidebars or additional sections.</p>
+    </div>
+    <div class=""card"">
+        <h2>Extra2</h2>
+        <p>Extra HTML content that can be included on the page. Similar to Extra1, this field provides space for more additional HTML content.</p>
+        <p class=""comment"">Utilize this for any further content that supports the main content.</p>
+    </div>
+    <div class=""card"">
+        <h2>topMenu</h2>
+        <p>The menu of the webpage. Entries are designated by the user to navigate different sections or pages.</p>
+        <p class=""comment"">Design the menu to enhance user navigation and experience.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourHeader</h2>
+        <p>HTML for the header of the webpage. This section typically includes the site logo, navigation links, and other important elements.</p>
+        <p class=""comment"">Keep the header consistent across all pages for better branding.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourFooter</h2>
+        <p>HTML for the footer of the webpage. This section usually contains contact information, copyright details, and additional links.</p>
+        <p class=""comment"">Ensure the footer provides useful information and links to key areas of the site.</p>
+    </div>
+    <div class=""card"">
+        <h2>styleSheet</h2>
+        <p>The URL of your stylesheet. Relative addressing can be used. This stylesheet controls the visual presentation of the site.</p>
+        <p class=""comment"">Use a well-structured stylesheet to maintain consistent styling across the site. If you are not using a stylesheet file, leave it blank</p>
+    </div>
+    <div class=""card"">
+        <h2>scriptsUrl</h2>
+        <p>The URL of your javascript. Relative addressing can be used, such as f:///c:/scripts/script.js. If you are not using a script file, leave it blank</p>
+    </div>
+    <div class=""card"">
+        <h2>fileExtension</h2>
+        <p>The file extension of the pages. Examples are html, htm, asp, php. This defines the format of the generated web pages.</p>
+        <p class=""comment"">Choose the correct file extension based on your server and requirements.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourMeta</h2>
+        <p>Meta statement for the webpage. This includes meta tags that provide metadata about the HTML document, such as description, keywords, and author.</p>
+        <p class=""comment"">Use meta tags to improve SEO and provide better context to search engines.</p>
+    </div>
+    <div class=""card"">
+        <h2>shareImageUrl</h2>
+        <p>The URL of the share image for the webpage. This image is used when the page is shared on social media platforms.</p>
+        <p class=""comment"">Ensure the image is of appropriate size and quality for sharing.</p>
+    </div>
+    <div class=""card"">
+        <h2>Website</h2>
+        <p>The dotcom name of your website, such as yoursite.com. This is the main address of your website.</p>
+        <p class=""comment"">Choose a memorable and relevant domain name for your site.</p>
+    </div>
+    <div class=""card"">
+        <h2>websiteUrl</h2>
+        <p>The URL of the website (includes trailing /). Example: https://yoursite.com/. This is the base URL used for constructing links within the site.</p>
+        <p class=""comment"">Ensure the URL is correct and includes the trailing slash.</p>
+    </div>
+    <div class=""card"">
+        <h2>Icon</h2>
+        <p>The URL of your icon. Relative addressing can be used. This icon is typically the favicon displayed in the browser tab.</p>
+        <p class=""comment"">Ensure the icon is appropriately sized and formatted.</p>
+    </div>
+
+    <div class=""card"">
+        <h2>topHtml</h2>
+        <p>HTML to be added just after the <code>&lt;html&gt;</code> tag of the page. This section can include high-level elements like metadata or external scripts.</p>
+        <p class=""comment"">Include any global scripts or styles here.</p>
+    </div>
+    <div class=""card"">
+        <h2>headTag</h2>
+        <p>HTML to be added just after the <code>&lt;head&gt;</code> tag of the page. This can include additional metadata, scripts, or styles specific to the page.</p>
+        <p class=""comment"">Customize the head tag content for each page as needed.</p>
+    </div>
+
+    <div class=""card"">
+        <h2>ourShareButton</h2>
+        <p>A cell in which an ""Add to Any"" share button can be added. This facilitates easy sharing of the webpage.</p>
+        <p class=""comment"">Include this button to increase the page's shareability.</p>
+    </div>
+    <div class=""card"">
+        <h2>useLinkBox</h2>
+        <p>True or False. Adds a ""Link to this page"" block, facilitating easy sharing and linking to the page.</p>
+        <p class=""comment"">Enable this feature to promote sharing of your content.</p>
+    </div>
+    <div class=""card"">
+        <h2>directoryMode</h2>
+        <p>True or False. The directory mode determines if the page should be saved in a directory with an index.html file or as a standalone HTML file.</p>
+        <p class=""comment"">Use directory mode for better organization and cleaner URLs.</p>
+    </div>
+    <div class=""card"">
+        <h2>frontPage</h2>
+        <p>True or False. Indicates if this is the front page of the website. The front page is usually the main entry point and should be well-optimized.</p>
+    </div>
+</div>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
 <a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
 <a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
-<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>","<a href=""https://webster123.com/""><img src=""https://webster123.com/insignia2.jpg""></a>",https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
 <html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
 ",,,False,False,False
-Webster123,d:\webster123,screen-shots,Screenshots,"<img src=""https://webster123.com/screenshot1.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot1"">
-<img src=""https://webster123.com/screenshot2.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot2"">
-<img src=""https://webster123.com/screenshot4.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot4"">
-<img src=""https://webster123.com/screenshot3.jpg"" style=""width: 80%; height: auto;""  alt=""Screenshot3"">",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+Webster123,d:\webster123,screen-shots,Screenshots,"<div class=""container"">
+<img src=""screenshot1.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot1"">
+<p>Double click a cell and the edit window appears. Webster is intuitive. Each line is a web page. It starts with a site id that you choose, where you will put the web page on your drive and a url, commonly called the ""slug"". From there it's title, content, menu header and footer just like Wordpress. Here you do it in html. You provide a url for your stylesheet on the net, or on your hard drive like file:///c:/stylesheets/my-stylesheet.css. </p>
+
+<img src=""https://webster123.com/screenshot2.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot2"">
+<p>Here we have scrolled to the left to capture the other elements of our web pages. You provide a url for your scripts (if you have some) on the net, or on your hard drive like file:///c:/scripts/my-script.js. <br>
+You also provide the file extension, html or php. You need php on your local computer for the file extension to be php. If not, you can still build pages but they can only be viewed on the internet. Other entries at this end help Webster to form urls for the internet related to your website. There are hooks for the html and head tags of your site. This is where you put php declarations and scripts such as Google Analytics.</p>
+
+<img src=""https://webster123.com/screenshot3.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot3"">
+<p>In this screenshot we have selected a row, right clicked for a popup menu and have selected ""Publish Selected Rows"". With a click and shift click we can select hundreds of rows and publish hundreds of pages to our disk and simply ftp them to the site.</p>
+
+<img src=""https://webster123.com/screenshot4.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot4"">
+<p>This screen shot shows that we have selected a page that we just published and have right clicked on the selected row and have selected the View Html Pages option. It will open as many pages as are selected into tabs of your default browser so be carefull here.</p></div>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
 <a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
 <a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
-<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>","<a href=""https://webster123.com/""><img src=""https://webster123.com/insignia2.jpg""></a>",https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
 <html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
 ",,,False,False,False
 Webster123,d:\webster123,getting-started,Getting Started,"<h2>Welcome to Webster123!</h2>
 <p>This tool allows you to generate static HTML pages, save them to your local drive so that you can ftp them to your site.<br>
-<h3>Simple Operation<h3></p>
+<h3>Simple Operation</h3></p>
 
 <p>The toolbar provides quick access to essential functions such as loading a CSV file, saving a CSV file, publishing rows to disk, and viewing HTML pages.</p>
 
-<h3> Double Click to Edit<h3>
+<h3> Double Click to Edit</h3>
 <p>To edit the content of a cell, double-click on the cell you want to edit. A text editor will appear where you can make changes. Click 'Save' to save the changes or 'Cancel' to discard them.</p>
 
 <h3>Set It up and Publish</h3>
-<p>To publish your web pages, enter the row numbers you want to process in the 'Publish Rows to Disk' dialog. Click 'OK' to generate the HTML files and save them to the specified folder.</p>
+<p>To publish your web pages, click on the row number to highlight the row. You can select multiple pages to publish by using the shift click to select multiple rows. Once you have selected a row, then right click on the row to get a menu. Select ""Publish Selected Rows""</p>
 
 <h3>View the Page You Made""</h3>
 
-<p>To view the generated web pages, enter the row numbers you want to open in the 'View Html Pages' dialog. Click 'OK' to open the pages in your default web browser.We'll discuss relative addressing so you can view your pages and images all from your computer before you take it to the net.</p>
+<p>To view your web pages, click on the row number to highlight the row. You can select multiple pages to publish by using the shift click to select multiple rows. Once you have selected a row, then right click on the row to get a menu. Select ""View Html""</p>
 
 
 <h3>File Operations</h3>
@@ -249,7 +264,7 @@ Using Webster123 to learn makes html fun.
 </p></blockquote>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
 <a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
 <a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
-<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>","<a href=""https://webster123.com/""><img src=""https://webster123.com/insignia2.jpg""></a>",https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
 <html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
 
 ",,,False,False,False
