@@ -1,0 +1,801 @@
+siteId,folderPath,ourUrl,ourTitle,ourContent,Extra1,Extra2,topMenu,ourHeader,ourFooter,styleSheet,scriptsUrl,fileExtension,ourMeta,shareImageUrl,Website,websiteUrl,Icon,topHtml,headTag,ourShareButton,useLinkBox,directoryMode,frontPage
+Webster123,d:\webster123,index,Webster123 The Fastest Websites Possible,"<div class=""main"">
+<section class=""three-columns"">
+    <div class=""column"">
+        <img src=""https://webster123.com/Website-Design.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+        <h3>Website Design Software</h3>
+        <p>Webster123 is an innovative tool designed to streamline the process of creating static HTML pages. It offers a user-friendly interface that allows users to generate, edit, and maintain web pages with ease. Whether you are a beginner or an experienced web designer, Webster123 provides the necessary features and functionalities to design visually appealing and highly functional websites without the complexity of traditional CMS platforms.</p>
+    </div>
+
+    <div class=""column"">
+        <img src=""https://webster123.com/seo-clarksville-tn-2.png"" alt="""" style=""width: 50%; height: auto;"" />
+        <h3>Web Designer Solution</h3>
+        <p>Web pages are often slowed down by SQL databases when displaying static information. Webster123 eliminates this bottleneck by allowing you to create static HTML pages that are lightweight and fast. Combined with modern FTP technology, Webster123 ensures that these pages can be easily uploaded, maintained, and updated, making it an ideal solution for web designers seeking efficiency and speed.</p>
+    </div>
+
+    <div class=""column"">
+        <img src=""https://webster123.com/arrangements-2.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+        <h3>Learn Html</h3>
+        <p>Webster123 offers an excellent platform for learning and mastering HTML. Its straightforward approach allows users to quickly write and view HTML code, providing immediate feedback and results. This hands-on experience helps users understand the fundamentals of web development and improves their coding skills, making the learning process both efficient and enjoyable.</p>
+    </div>
+</section>
+<section class=""two-columns"">
+    <div class=""wide-column"">
+        <h3>Eliminate your webmaster CMS Headaches</h3>
+        <p><em>“Webster123 can store multiple websites in one file”</em></p>
+        <p>Updating WordPress for simple changes like a phone number can be cumbersome and prone to frequent downtime. If you manage multiple calling card sites, the maintenance can become overwhelming. Webster123 simplifies this process by storing multiple websites in a single spreadsheet-compatible file. This approach eliminates the need for complex CMS systems, reduces server load, and makes site management more straightforward and reliable.</p>
+        <p>Hit it out of the park with Webster123</p>
+    </div>
+    <div class=""narrow-column"">
+        <img  src=""baberuth.jpg"" alt="""" style=""width: 85%; height: auto;"" />
+    </div>
+</section></div>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+",,,False,False,True
+Webster123,d:\webster123,our-inputs,Our Inputs,"<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.comment {
+    color: #555;
+    font-size: 0.9em;
+}
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+</style>
+<h1>Webster123 Variables</h1>
+<p>This document provides detailed information on the various variables used in the Webster123 program, along with elaborated comments to help understand their purpose and usage.</p>
+<div class=""container"">
+    <div class=""card"">
+        <h2>siteId</h2>
+        <p>The identifier for the site. This can be used to distinguish between different sites managed by Webster123.</p>
+        <p class=""comment"">Choose a unique identifier for each site.</p>
+    </div>
+    <div class=""card"">
+        <h2>folderPath</h2>
+        <p>The local folder in which to store the webpage. This defines the directory structure for saving the HTML files.</p>
+        <p class=""comment"">Organize your folder structure for easy access and maintenance.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourUrl</h2>
+        <p>Commonly known as the slug. It should consist of lowercase words with dashes between them. This is the part of the URL that uniquely identifies the web page.</p>
+        <p class=""comment"">For example, ""web-page-example"" can be a valid slug.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourTitle</h2>
+        <p>The Title of the web page. This is what appears in the browser tab and is important for SEO and usability.</p>
+        <p class=""comment"">A concise, descriptive title like ""About Us - Webster123"" works well.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourContent</h2>
+        <p>The HTML content of the page as provided by the user. This field should contain all the necessary HTML markup to render the main content of the page.</p>
+        <p class=""comment"">Ensure the HTML is well-structured and valid to avoid rendering issues.</p>
+        </div>
+    <div class=""card"">
+        <h2>Extra1</h2>
+        <p>Ex                                                                                                                       tra HTML content that can be included on the page. This is an optional field for additional HTML snippets.</p>
+        <p class=""comment"">Use this field for supplementary content such as sidebars or additional sections.</p>
+    </div>
+    <div class=""card"">
+        <h2>Extra2</h2>
+        <p>Extra HTML content that can be included on the page. Similar to Extra1, this field provides space for more additional HTML content.</p>
+        <p class=""comment"">Utilize this for any further content that supports the main content.</p>
+    </div>
+    <div class=""card"">
+        <h2>topMenu</h2>
+        <p>The menu of the webpage. Entries are designated by the user to navigate different sections or pages.</p>
+        <p class=""comment"">Design the menu to enhance user navigation and experience.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourHeader</h2>
+        <p>HTML for the header of the webpage. This section typically includes the site logo, navigation links, and other important elements.</p>
+        <p class=""comment"">Keep the header consistent across all pages for better branding.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourFooter</h2>
+        <p>HTML for the footer of the webpage. This section usually contains contact information, copyright details, and additional links.</p>
+        <p class=""comment"">Ensure the footer provides useful information and links to key areas of the site.</p>
+    </div>
+    <div class=""card"">
+        <h2>styleSheet</h2>
+        <p>The URL of your stylesheet. Relative addressing can be used. This stylesheet controls the visual presentation of the site.</p>
+        <p class=""comment"">Use a well-structured stylesheet to maintain consistent styling across the site. If you are not using a stylesheet file, leave it blank</p>
+    </div>
+    <div class=""card"">
+        <h2>scriptsUrl</h2>
+        <p>The URL of your javascript. Relative addressing can be used, such as f:///c:/scripts/script.js. If you are not using a script file, leave it blank</p>
+    </div>
+    <div class=""card"">
+        <h2>fileExtension</h2>
+        <p>The file extension of the pages. Examples are html, htm, asp, php. This defines the format of the generated web pages.</p>
+        <p class=""comment"">Choose the correct file extension based on your server and requirements.</p>
+    </div>
+    <div class=""card"">
+        <h2>ourMeta</h2>
+        <p>Meta statement for the webpage. This includes meta tags that provide metadata about the HTML document, such as description, keywords, and author.</p>
+        <p class=""comment"">Use meta tags to improve SEO and provide better context to search engines.</p>
+    </div>
+    <div class=""card"">
+        <h2>shareImageUrl</h2>
+        <p>The URL of the share image for the webpage. This image is used when the page is shared on social media platforms.</p>
+        <p class=""comment"">Ensure the image is of appropriate size and quality for sharing.</p>
+    </div>
+    <div class=""card"">
+        <h2>Website</h2>
+        <p>The dotcom name of your website, such as yoursite.com. This is the main address of your website.</p>
+        <p class=""comment"">Choose a memorable and relevant domain name for your site.</p>
+    </div>
+    <div class=""card"">
+        <h2>websiteUrl</h2>
+        <p>The URL of the website (includes trailing /). Example: https://yoursite.com/. This is the base URL used for constructing links within the site.</p>
+        <p class=""comment"">Ensure the URL is correct and includes the trailing slash.</p>
+    </div>
+    <div class=""card"">
+        <h2>Icon</h2>
+        <p>The URL of your icon. Relative addressing can be used. This icon is typically the favicon displayed in the browser tab.</p>
+        <p class=""comment"">Ensure the icon is appropriately sized and formatted.</p>
+    </div>
+
+    <div class=""card"">
+        <h2>topHtml</h2>
+        <p>HTML to be added just after the <code>&lt;html&gt;</code> tag of the page. This section can include high-level elements like metadata or external scripts.</p>
+        <p class=""comment"">Include any global scripts or styles here.</p>
+    </div>
+    <div class=""card"">
+        <h2>headTag</h2>
+        <p>HTML to be added just after the <code>&lt;head&gt;</code> tag of the page. This can include additional metadata, scripts, or styles specific to the page.</p>
+        <p class=""comment"">Customize the head tag content for each page as needed.</p>
+    </div>
+
+    <div class=""card"">
+        <h2>ourShareButton</h2>
+        <p>A cell in which an ""Add to Any"" share button can be added. This facilitates easy sharing of the webpage.</p>
+        <p class=""comment"">Include this button to increase the page's shareability.</p>
+    </div>
+    <div class=""card"">
+        <h2>useLinkBox</h2>
+        <p>True or False. Adds a ""Link to this page"" block, facilitating easy sharing and linking to the page.</p>
+        <p class=""comment"">Enable this feature to promote sharing of your content.</p>
+    </div>
+    <div class=""card"">
+        <h2>directoryMode</h2>
+        <p>True or False. The directory mode determines if the page should be saved in a directory with an index.html file or as a standalone HTML file.</p>
+        <p class=""comment"">Use directory mode for better organization and cleaner URLs.</p>
+    </div>
+    <div class=""card"">
+        <h2>frontPage</h2>
+        <p>True or False. Indicates if this is the front page of the website. The front page is usually the main entry point and should be well-optimized.</p>
+    </div>
+</div>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+",,,False,False,False
+Webster123,d:\webster123,screen-shots,Screenshots,"<div class=""container"">
+<img src=""screenshot1.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot1"">
+<p>Double click a cell and the edit window appears. Webster is intuitive. Each line is a web page. It starts with a site id that you choose, where you will put the web page on your drive and a url, commonly called the ""slug"". From there it's title, content, menu header and footer just like Wordpress. Here you do it in html. You provide a url for your stylesheet on the net, or on your hard drive like file:///c:/stylesheets/my-stylesheet.css. </p>
+
+<img src=""https://webster123.com/screenshot2.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot2"">
+<p>Here we have scrolled to the left to capture the other elements of our web pages. You provide a url for your scripts (if you have some) on the net, or on your hard drive like file:///c:/scripts/my-script.js. <br>
+You also provide the file extension, html or php. You need php on your local computer for the file extension to be php. If not, you can still build pages but they can only be viewed on the internet. Other entries at this end help Webster to form urls for the internet related to your website. There are hooks for the html and head tags of your site. This is where you put php declarations and scripts such as Google Analytics.</p>
+
+<img src=""https://webster123.com/screenshot3.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot3"">
+<p>In this screenshot we have selected a row, right clicked for a popup menu and have selected ""Publish Selected Rows"". With a click and shift click we can select hundreds of rows and publish hundreds of pages to our disk and simply ftp them to the site.</p>
+
+<img src=""https://webster123.com/screenshot4.jpg"" style=""width: 100%; height: auto;""  alt=""Screenshot4"">
+<p>This screen shot shows that we have selected a page that we just published and have right clicked on the selected row and have selected the View Html Pages option. It will open as many pages as are selected into tabs of your default browser so be carefull here.</p></div>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+",,,False,False,False
+Webster123,d:\webster123,getting-started,Getting Started,"<h2>Welcome to Webster123!</h2>
+<p>This tool allows you to generate static HTML pages, save them to your local drive so that you can ftp them to your site.<br>
+<h3>Simple Operation</h3></p>
+
+<p>The toolbar provides quick access to essential functions such as loading a CSV file, saving a CSV file, publishing rows to disk, and viewing HTML pages.</p>
+
+<h3> Double Click to Edit</h3>
+<p>To edit the content of a cell, double-click on the cell you want to edit. A text editor will appear where you can make changes. Click 'Save' to save the changes or 'Cancel' to discard them.</p>
+
+<h3>Set It up and Publish</h3>
+<p>To publish your web pages, click on the row number to highlight the row. You can select multiple pages to publish by using the shift click to select multiple rows. Once you have selected a row, then right click on the row to get a menu. Select ""Publish Selected Rows""</p>
+
+<h3>View the Page You Made""</h3>
+
+<p>To view your web pages, click on the row number to highlight the row. You can select multiple pages to publish by using the shift click to select multiple rows. Once you have selected a row, then right click on the row to get a menu. Select ""View Html""</p>
+
+
+<h3>File Operations</h3>
+
+<p>To load a CSV file, click on the 'Load CSV' button in the toolbar. Select the CSV file containing your web page data and click 'Open'.</p>
+
+<p>To save the current CSV file, click on the 'Save CSV' button in the toolbar. Choose a location to save the file and click 'Save'.</p>
+
+<h2> Let's Go</h2>
+<p>The program loads with a web page in the first row. It is a simple page that shows the only requirements to use this tool to teach yourself html or php. It excels as a ""Try this Code Tool"". With php, you have to have php installed on your computer but with html you do not.</p>
+<h2>Basic Requirements To Create a Page</h2>
+<blockquote><h3>Must Haves</h3>
+<p>
+<ul>
+<li>ourUrl</li>
+<li>folderPath (where are we putting it?)</li>
+<li>fileExtension (html or php)</li>
+</ul>
+</p></blockquote>
+<blockquote><h3>Now What do you Want To Do?</h3>
+<p>Like Wordpress and many other content creation methods, We basically provide user space for a Header, a Title, Our Content and a Footer.
+<ul>
+<li>ourHeader</li>
+<li>ourTitle</li>
+<li>ourContent (Our html for the content)</li>
+<li>Extra1 and Extra2 (Extra Content)</li>
+<li>ourFooter</li>
+</ul>
+Using Webster123 to learn makes html fun.
+</p></blockquote>",,,"<a href=""https://webster123.com/index.html"" aria-current=""page"">Webster123</a>
+<a href=""https://webster123.com/our-inputs.html"">Our Inputs</a>
+<a href=""https://webster123.com/screen-shots.html"">Screen Shots</a>
+<a href=""https://webster123.com/getting-started.html"">Getting Started</a>","<a href=""https://webster123.com/index.html""><img src=""https://webster123.com/webster-logo-web.jpg"" border=""0"" alt=""Website Design Software"" /></a>",,https://webster123.com/stylesheets/webster1.css,,html,,,Webster123.com,https://webster123.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+",,,False,False,False
+,,,,,,,,,,,,,,,,,,,,,,,
+Ctaps,d:\ctaps,index,"Trophies Awards and Plaques | Clarksville, Tn","<div class=""container"">
+<section class=""three-columns"">
+    <div class=""column"">
+<img src=""https://clarksvilletaps.com/trophies.jpg"" alt=""trophies clarksville"" width=""175"" height=""175"" />
+<h3>Trophies</h3>
+<p>A trophy can be a lifetime reminder of the team, the event and the people with whom we shared the moments. It’s a reward for being a part of something. Our trophies are of the highest  quality and the years we have spent learning the engraving and mounting of presentation trophies can be your best foot forward in rewarding the team.</p></div>
+        <div class=""column""><img src=""https://clarksvilletaps.com/plaques.jpg"" alt=""plaques and awards clarksville"" width=""175"" height=""175"" />
+
+<h3>Awards and Plaques</h3>
+
+<p>A plaque is something we see on successful walls. It recognizes achievements in life as well as sports. Our product will last and is crafted with the finest woods, metals and other woods. Whatever the accomplishment, it can shine like the achievement itself.</p></div>
+        <div class=""column""><img src=""https://clarksvilletaps.com/engraving.jpg"" alt="""" width=""175"" height=""175""  />
+
+<h3>Custom Engraving</h3>
+
+<p>The engraver is trusted with the surface. A high level of skill is required to “Do it the old way”. That is the way that looks authentic. That authenticity is to be seen and treasured.</p></div>
+</section>
+    <section class=""two-columns"">
+    <div class=""wide-column""><p>“Welcome to Clarksville Trophies, Awards, and Plaques (Clarksville TAPS)! <br> <blockquote><em>Before I started this business, I worked for many years with Ronnie Page at Clarksville Sporting Goods. Clarksville Trophies, Awards, and Plaques (Clarksville TAPS) offers you the same personable, quality service you have always relied on with some added options I believe you may find convenient. In addition to well-crafted products, you will now be able access digital options for bill payment plus we offer no-charge local delivery. I can also process purchase orders and accept paper checks if you’d prefer. Whatever your needs for trophies, awards, plaques, and other engraving, please call me at (931) 216-7678 or drop me an email at ClarksvilleTAPS@gmail.com. Should you be in the market for team uniforms, hats, screen printing, or embroidery, please contact Ronnie Page at (931) 801-2234</blockquote></em>...... Scott Jackson Owner</p></div>
+        <div class=""narrow-column"" style=""vertical-align: middle;""><img src=""https://clarksvilletaps.com/recognition-awards.jpg"" alt="""" />
+
+</div>
+</section></div>",,,,"<p style=""background-image: url('https://clarksvilletaps.com/trophies-and-plaques-7.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; padding:10px;"">
+<a href=""https:clarksvilletaps.com""><img src=""https://clarksvilletaps.com/Trophies-awards-plaques-and-engraving-logo.jpg"" width=""200"" height=""60""  border=""0"" alt=""clarksville trophies, awards and plaques clarksville tn"" /></a><br><br>
+Recognize them with the best in engraving, quality, and presentation.<br>
+For awards and trophies<br> Call Scott Jackson <br> (931) 216-7678 today.</p>
+<hr>","<section class=""three-columns"">"">
+        <div class=""column""><h3>Email:<br><a href=""mailto:clarksvilletaps@gmail.com"">clarksvilletaps@gmail.com</a></h3></div>
+        <div class=""column""><h3>Phone:<br><b>(931) 216-7678</b></h3></div>
+        <div class=""column""><a href=""https://www.facebook.com/ClarksvilleTAPS""><img src=""https://clarksvilletaps.com/followus.jpg"" alt=""follow us""></a></div>
+</section>",https://webster123.com/stylesheets/webster-no-menu.css,,html,,,clarksvilletaps.com,https://clarksvilletaps.com/,https://clarksvilletaps.com/ctaps-icon2.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script>",,False,False,False
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+",,,False,True,False
+ZZ Construction,d:\zzweb,index,Custom Carpentry  | Decks and Fencing |  Interior Renovation,"<div class=""container"">
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/deck-with-lattice.jpg"" alt=""deck-with-lattice"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/fences.jpg"" alt=""fences"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/screened-porch.jpg"" alt=""screened-porch"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/deck-and-yard.jpg"" alt=""deck-and-yard"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/deck-with-chairs.jpg"" alt=""deck-with-chairs"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/kyle-at-work.jpg"" alt=""kyle-at-work"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/rear-deck-and-stairs.jpg"" alt=""rear-deck-and-stairs"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/platform-deck.jpg"" alt=""platform-deck"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/deck-metal-rails.jpg"" alt=""deck-metal-rails"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/deck-and-landscape.jpg"" alt=""deck-and-landscape"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/interior-renovations-remodel.jpg
+        "" alt=""interior-renovations-remodel"">
+    </div>
+    <div class=""slide"">
+         <img src=""https://zzconstruct.com/custom-carpentry-wide.jpg"" alt=""custom-carpentry-wide"">
+    </div>
+    <div class=""slide"">
+        <img src=""https://zzconstruct.com/large-fences.jpg"" alt=""large-fences"">
+    </div>
+</div>","<div class=""container""></div>    
+    <section class=""three-columns"">
+        <div class=""column"">
+            <img src=""https://zzconstruct.com/decks-and-fences.jpg"" alt=""decks-and-fences"" width=""175"" height=""175"" />
+            <h3>Decks and Fencing</h3>
+            <p>ZZ Construct and Kyle Zager excel in crafting residential decks that seamlessly merge functionality and aesthetics. With meticulous planning and design, they create tailored outdoor living spaces, from multi-level decks for gatherings to single-level platforms for quiet escapes. Utilizing cutting-edge techniques, their construction ensures safety and durability, whether using wood or composite materials. Collaboration with clients remains paramount, as they integrate unique elements like seating and lighting to enhance the deck's ambiance. ZZ Construct and Kyle Zager's expertise transcends traditional deck construction, consistently delivering transformative outdoor spaces that redefine leisure and entertainment.</p>
+        </div>
+        <div class=""column"">
+            <img class=""wp-image-359"" src=""https://zzconstruct.com/interior-renovations.jpg"" alt=""interior-renovations""width=""175"" height=""175"" />
+            <h3>Interior Renovation </h3>
+            <p>ZZ Construct is a renowned name in the realm of interior remodeling, offering unparalleled expertise and innovation in transforming living spaces.
+            With a commitment to excellence, ZZ Construction excels in revitalizing interiors to reflect both functionality and style. Their process begins with a comprehensive understanding of the client's vision and needs, enabling them to create designs that harmonize with existing aesthetics while introducing new dimensions.
+            From concept to completion, ZZ Construct's interior remodeling projects encompass a range of possibilities. Whether it's reimagining kitchens to enhance workflow and modernity, revamping bathrooms for luxury and comfort, or converting spaces to accommodate evolving lifestyles, their skilled team ensures every detail is meticulously executed.</p>
+        </div>
+        <div class=""column"">
+            <img src=""https://zzconstruct.com/custom-carpentry.jpg"" alt=""custom-carpentry"" width=""175"" height=""175""  />
+            <h3>Custom Carpentry</h3>
+            <p>ZZ Construct is synonymous with exceptional custom carpentry, where creativity and craftsmanship converge to shape unique and functional living spaces.
+            Specializing in custom carpentry, ZZ Construction brings dreams to life by crafting bespoke solutions that align with clients' visions. Their process commences with attentive consultations, understanding clients' desires and requirements to create designs that seamlessly blend aesthetics with utility.
+            From conceptualization to realization, ZZ Construct's custom carpentry ventures span a diverse spectrum. Be it crafting custom cabinets that maximize storage efficiency, designing intricate built-in bookshelves that add character to rooms, or producing tailor-made furniture that fits seamlessly, their skilled artisans ensure each piece is a masterpiece.</p>
+        </div>
+    </section>
+    <section class=""two-columns"">
+        <div class=""wide-column"">
+            <p>Hit a home run with ZZ Construct: Where Innovation Meets Craftsmanship in Interior Remodeling and Custom Carpentry. Elevate your living spaces through our meticulous designs, impeccable craftsmanship, and unwavering dedication to turning visions into reality. Whether it's reinventing interiors to reflect modern elegance or creating bespoke carpentry pieces that stand as functional works of art, ZZ Construct is your partner in shaping environments that resonate with individuality. Collaborate with our team of experts to reimagine kitchens, bathrooms, and beyond, ensuring every detail exudes excellence and purpose. Experience the fusion of creativity and practicality as we breathe new life into your spaces. Explore the possibilities with ZZ Construction and embark on a journey where each project is a testament to transformation, innovation, and the pursuit of exceptional living.</p>
+        </div>
+        <div class=""narrow-column"" style=""vertical-align: middle;"">
+            <center><img src=""https://zzconstruct.com/cabinets.jpg"" alt="""" /></center>
+```     </div>
+    </section>
+    <section class=""two-columns"">
+        <div class=""narrow-column"">
+`           <p>Request a quote for your  project today!</p>
+        </div>
+        <div class=""wide-column"">
+            <p><p><em>“They extended my sidewalk porch and now my rocking chair rocks! I highly recomend their work. Well done and well priced!”</em><br />……….. Dave Jackson, Murfreesboro</p>
+        </div>
+    </section>
+</div>",,,"<div class-""container""
+   <div class=""two-columns"">
+        <div class=""narrow-column""><a href=""https://zzconstruct.com/"">
+            <img  src=""https://zzconstruct.com/zzconstruct-murfreesboro-tn.jpg"" alt=""zzconstruct murfreesboro tn"" /></a>
+        </div>
+        <div class=""wide-column""><h2>Call Kyle Zager at (615)584-0471</h2>
+        </div>
+</div>
+<hr>","<div class=""container""></div>
+    <div class=""three-columns"">
+        <div class=""column"">
+            <h3>Email:<br><a href=""mailto:zzconstruct@yahoo.com"">zzconstruct@yahoo.com</a></h3>
+        </div>
+        <div class=""column"">
+            <h3>Kyle Zager<br>(615)584-0471</h3>
+        </div>
+        <div class=""column"">
+            <h3>104 Faldo Drive<br>Murfreesboro, Tn 37128</h3>
+        </div>
+    </div>
+</div>",https://webster123.com/stylesheets/webster-no-menu.css,https://webster123.com/scripts/script.js,html,,,zzconstruct.com,https://zzconstruct.com/,https://zzconstruct.com/zz-icon.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script>",,False,False,True
+,,,,,,,,,,,,,,,,,,,,,,,False
+A&T Marine Cruisair,d:\atweb,index,Mobile Marine Generator and AC Service Nashville and Middle Tennessee,"<div class=""container"">
+    <div class=""two-columns"">
+        <div class=""narrow-column"">
+            <h3 text-align=""center"">A&T Marine Cruisair</h3>
+            <img src=""https://atmarinecruisair.com/tommy-garrett-marine-generator-repairs.jpg"" alt=""Tommy Garrett""  class=""center2"" />
+            <h4 class=""center"">Tommy Garrett</h4>
+            <h3 class=""center"">25 years experience<br>Factory Trained</h3>
+        </div>
+        <div class=""wide-column"">  
+            <h3 style=""text-align:left;""><b>Kohler & Westerbeke</b></h3>
+            <p style=""text-align:left;"">Diesel and gasoline marine generator service. Diagnosis of electronic and mechanical systems.</p>
+            <h3 style=""text-align:left;"">CruiseAir</h3>
+            <h3 style=""text-align:left;"">Marine AC</h3>
+            <h3 style=""text-align:left;"">Service and Installation</h3>
+            <p style=""text-align:left;"">Marine air conditioner refrigeration and air delivery system diagnosis and repair.</p>
+        </div>
+    </div>       
+</div>
+    
+<div class=""container"">
+    <div class=""three-columns"">
+        <div class=""column"">
+            <img src=""https://atmarinecruisair.com/generator-repair.jpg"" alt=""marine generator repair kohler and westerbeek"" width=""175"" height=""175"" class=""center""/>
+            <h3>Marine Generator Service</h3>
+            <p>Marine Diesel Engine Maintenence</p>
+            <p>Diesel Engine Overhauls</p>
+            <p>Parts sourcing</p>
+            <p>Troubleshooting</p>
+            <p>New Engine and Part Sales</p>
+        </div>
+        <div class=""column"">
+            <img src=""https://atmarinecruisair.com/dometic-cruisair-marine-ac.jpg"" alt=""dometic/cruisair ac repair""width=""175"" height=""175"" class=""center""/>
+            <h3>Marine Air Conditioner Service and Installation</h3>
+            <p>Repair or replace Dometic Cruisair and other brands of marine air conditioning units, evaporating units, compressors, condensing units, chilled water systems, circulation pumps, drain pan and condensation pumps.</p>
+        </div>
+        <div class=""column""><img  src=""https://atmarinecruisair.com/maintenance and winterization.jpg"" alt=""maintenanceand winterization"" width=""175"" height=""175"" class=""center"" />
+            <h3>Maintenance and Winterization</h3>
+            <p>If you don’t perform routine maintenance and add generator care to your list of duties, it could result in costly marine generator repairs.
+            In many areas of the country, you’ll want to winterize a boat before freezing temperatures set in.</p>
+        </div>
+    </div>
+    <div class=""two-columns"">
+        <div class=""wide-column""><p>A&T Marine Cruisair and Tommy Garrett bring 25 years of experience wih marine generators on boats, gasolene and diesel.Whether it's a problem with the internal combustion, or the rotors and stators of the generators, Tommy and crew have the equipment and knowledge to fix the problem and get uou back to enjoying your vessel or houseboat. If there is a problem with controls, we can diagnose and we have the manufacturer software and contacts to solve any problem.<hr> 
+            We are also your source for dignoses and repair of <b>MicroCommander</b> Engine controls.</p></div>
+        <div class=""narrow-column"" style=""vertical-align: middle;"">
+            <center><img src=""https://atmarinecruisair.com/houseboat-upper-deck.jpg"" alt="""" /></center>
+        </div>
+    </div>
+    <div class=""two-columns"">
+        <div class=""narrow-column"">
+            <p><em>“Our mission is to help you to enjoy your boating and houseboat experience. Your marine generator must meet that need with proper maintenance, oil changes, and winterization.
+            Your Marine AC, air conditioning products must be maintained and repaired to ensure your family's comfort.</em><br />………Tommy Garrett</p>
+            <img src=""https://atmarinecruisair.com/lake-with-boat.jpg"" alt=""generator-repair-house-boats"" class=""center"" />
+        </div>
+        <div class=""wide-column centered-left"">
+            <p><b>Center Hill Lake</b><br>
+            Center Hill Marina<br>
+            Cookeville Marina<br>
+            Edgar Evins Marina<br>
+            Four Seasons Marina<br>
+            Hidden Harbor Marina <br>
+            Horseshoe Bend Marina<br>
+            Hurricane Marina <br>
+            Pates Ford Marina<br>
+            Silgo Marina<br>
+            <b>Percy Priest Lake</b><br>
+            Elm Hill Marina<br>
+            Fate Sanders Marina<br>
+            Four Corners Marina<br>
+            Hamilton Creek Sailboat Marina<br>
+            Nashville Shores Marina<br>
+            Percy Priest Yacht Club<br>
+            <b>Old Hickory Lake</b><br>
+            Anchor Marina<br>
+            Creekwood Marina<br>
+            Drakes Creek Marina<br>
+            Blue Turtle Marina<br>
+            Anchor High Marina<br>
+            Cedar Creek Marina<br></p>
+        </div>
+    </div>
+    
+    </div>
+</div>",,,,"<div class=""container"">
+    <div class=""two-columns"">
+        <div class=""narrow-column"">
+            <a href=""https://atmarinecruisair.com/""><img src=""https://atmarinecruisair.com/logo3.jpg"" alt=""A&T Marine Cruisair"" /></a>
+        </div>
+        <div class=""wide-column"">
+            <h3>Call Tommy Garrett (615)780-8077</h3>
+        </div>
+    </div>
+</div>","<div class=""""container"">
+    <div class=""three-columns"">
+            <div class=""column"">
+                <h3>Email:<br><a href=""mailto:tommy@atmarinecruisair.com"">tommy@atmarinecruisair.com</a></h3>
+            </div>
+            <div class=""column"">
+                <h3>Tommy Garrett<br>(615)780-8077</h3>
+            </div>
+            <div class=""column"">
+                <h3>112 Suzinne St<br>Smyrna, TN 37167</h3>
+            </div>
+    </div>
+</div>",https://webster123.com/stylesheets/webster-no-menu-atmarine.css,,html,,,atmarinecruisair.com,https:/atmarinecruisair.com/,"https://atmarinecruisair.com/cropped-icon1.jpg
+","<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">",,,False,False,True
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+Cweb,d:\Cweb5,index," Web Design and SEO Clarksville, Tn","<div class=""container"">
+    <div class=""three-columns"">
+        <div class=""column"">
+            <img src=""https://clarksvilleweb.com/Website-Design.jpg"" alt=""""  style=""width: 50%; height: auto;"" />
+            <h3>Website Design</h3>
+            <p>Product or service? You need a website from a Clarksville Tennessee website designer with experience who can give you a look that you need and help your website to perform and bring customers. Our designers will get to know your business, and you as they design your website with the modern look and the right words. Whatever your company is, a website is just what you need to present your skills, your services or your products. Our website designers will represent you.</p>
+        </div>
+        <div class=""column"">
+            <img class=""wp-image-359"" src=""https://clarksvilleweb.com/seo-clarksville-tn-2.png"" alt="""" style=""width: 50%; height: auto;"" />
+            <h3>SEO Search Engine Marketing</h3>
+            <p>The step to website success is something called SEO, search engine optimization in Clarksville Tennessee. Being on the Internet is the first step to being found. We help you compete in local searches and we have the linking power to do so. We will help you register your business with search engines and put you on the local map for your business. Your business needs an address and a phone number for local listings. With SEO your listing in the searches is optimized so you can compete. Internet marketing it's called.</p>
+        </div>
+        <div class=""column"">
+            <img class=""wp-image-336"" src=""https://clarksvilleweb.com/arrangements-2.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+            <h3>Logos and Business Development</h3>
+            <p>Logos are the most fun. We love being visual. Logos represent you and can appear on cards and stationary. Your logo is a lasting visual statement that your customers will remember about your business. It is truly your calling card. We are very accomplished at finding the right dotcom name for you and creating a look that you love. We help you to be independent and are here to help you find a look that is modern and present your business in a positive way.</p></b>
+        </div>
+    </div>
+    <div class=""two-columns"">
+        <div class=""wide-column"">
+            <h3>Clarksville website design SEO and Marketing</h3>
+            <p><em>“We help you be there, look professional and most importantly, we help you be found. We are happy when your phone rings.”</em><br />……….. Dave Jackson, Clarksvilleweb</p>
+            <p>Whether you're a new business or an established business, you need professional help and our experience on the Internet exceeds 20 years of website development, hosting e-zines and websites. Our strength is your strength. The Internet world is a place where most are not expert in need professional help to have a website that is affordable and presents a good experience for the visitor. As your website designer we like to be your friend and to see you succeed.</p>
+            <p>Request a quote for your website design or SEO project today!</p></b>
+        </div>
+        <div class=""narrow-column"">
+            <img class=""wp-image-359"" src=""https://clarksvilleweb.com/baberuth.jpg"" alt="""" style=""width: 85%; height: auto;"" />
+        </div>
+    </div>
+</div>",,,"<a href=""https://clarksvilleweb.com/"" aria-current=""page"">Web Design Clarksville</a>
+<a href=""https://clarksvilleweb.com/website-design/"">Website Design</a>
+<a href=""https://clarksvilleweb.com/seo/"">SEO</a>
+<a href=""https://clarksvilleweb.com/contact/"">Contact Us</a>","<a href=""https://clarksvilleweb.com/""><img src=""https://clarksvilleweb.com/design-websites-clarksville.jpg"" width=""200"" height=""85""  border=""0"" alt=""local_seo"" /></a>
+
+
+
+
+
+","<ul>
+ 	<li class=""no-label"">
+<div><a href=""mailto:support@clarksvilleweb.com"">support@clarksvilleweb.com</a></li>
+ 	<li>
+(615)663-9558</div></li>
+</ul>",https://webster123.com/stylesheets/webster1.css,,html,,,clarksvilleweb.com,https://clarksvilleweb.com/,https://clarksvilleweb.com/iconweb.jpg,"<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script><script>
+function myFunction() {
+    var x = document.getElementById(""myTopnav"");
+    if (x.className === ""topnav"") {
+        x.className += "" responsive"";
+    } else {
+        x.className = ""topnav"";
+    }
+}
+</script>","<!-- AddToAny BEGIN -->
+<a class=""a2a_dd"" href=""https://www.addtoany.com/share""><img src=""https://static.addtoany.com/buttons/share_save_171_16.png"" width=""171"" height=""16"" border=""0"" alt=""Share""></a>
+<script async src=""https://static.addtoany.com/menu/page.js""></script>
+<!-- AddToAny END --><br>
+  <script>
+        function changeVideo(videoUrl, event) {
+          event.preventDefault();
+          document.getElementById(""largeVideo"").src = videoUrl;
+          document.getElementById(""largeVideo"").scrollIntoView({ behavior: ""smooth"", block: ""start"" });
+        }
+        </script>",True,False,True
+Cweb,d:\Cweb5,website-design,Website Design,"<div class=""container"">
+    <div class=""three-columns"">
+        <div class=""column"">
+            <img src=""https://clarksvilleweb.com/logos.jpg"" alt=""""  style=""width: 50%; height: auto;"" />
+            <h3>Name and Logos</h3>
+            <p>If you’re a start up and you need a name, we are good at naming things especially websites and we love brainstorming with customers for logo ideas.</p>
+        </div>
+        <div class=""column"">
+            <img class=""wp-image-359"" src=""https://clarksvilleweb.com/website-design-2.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+            <h3>Website Design</h3>
+            <p>We specialize in websites created with WordPress but we have been known to use Blogger and other platforms depending upon the customer’s needs.</p>
+        </div>
+        <div class=""column"">
+            <img class=""wp-image-336"" src=""https://clarksvilleweb.com/hosting.jpg"" alt="""" style=""width: 50%; height: auto;"" />
+            <h3>Hosting</h3>
+            <p>Our goal is for you to be independent. We will help you create website hosting that is in an account of your own and not hidden within managed hosting on our site./p></b>
+        </div>
+    </div>
+    <div class=""two-columns"">
+        <div class=""wide-column"">
+            <h3>Some advanced talk here</h3>
+            <p>We help customers with advanced needs related to database and CSV posting of products or posts to websites. We are expert at using Excel VBA (Visual Basic), PHP, MySQL and other methods to solve complex Internet problems for companies.</p></div>
+        <div class=""narrow-column"">
+            <img src=""https://clarksvilleweb.com/services-1.jpg"" style=""width: 85%; height: auto;"">
+        </div>
+    </div>
+    <div class=""two-columns"">
+        <div class=""narrow-column""> 
+            <img src=""https://clarksvilleweb.com/services-2.jpg"" style=""width: 100%; height: auto;"">
+        </div>
+        <div class=""wide-column"">
+            <h4>What’s in it for you.</h4>
+            <p>Probably some free advice on the phone. A professional website, dotcom name, sharp looking logo and web advice pointed toward a website that looks good and can be found.</p>
+            <p>Request a quote for your website design or SEO project today!</p>
+        </div>
+    </div>
+</div>",,,"<a href=""https://clarksvilleweb.com/"" aria-current=""page"">Web Design Clarksville</a>
+<a href=""https://clarksvilleweb.com/website-design/"">Website Design</a>
+<a href=""https://clarksvilleweb.com/seo/"">SEO</a>
+<a href=""https://clarksvilleweb.com/contact/"">Contact Us</a>","<a href=""https://clarksvilleweb.com/""><img src=""https://clarksvilleweb.com/design-websites-clarksville.jpg"" width=""200"" height=""85""  border=""0"" alt=""local_seo"" /></a>
+
+
+
+
+
+","<ul>
+ 	<li class=""no-label"">
+<div><a href=""mailto:support@clarksvilleweb.com"">support@clarksvilleweb.com</a></li>
+ 	<li>
+(615)663-9558</div></li>
+</ul>",https://webster123.com/stylesheets/webster1.css,,html,,,clarksvilleweb.com,https://clarksvilleweb.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script>","<!-- AddToAny BEGIN -->
+<a class=""a2a_dd"" href=""https://www.addtoany.com/share""><img src=""https://static.addtoany.com/buttons/share_save_171_16.png"" width=""171"" height=""16"" border=""0"" alt=""Share""></a>
+<script async src=""https://static.addtoany.com/menu/page.js""></script>
+<!-- AddToAny END --><br>
+  <script>
+        function changeVideo(videoUrl, event) {
+          event.preventDefault();
+          document.getElementById(""largeVideo"").src = videoUrl;
+          document.getElementById(""largeVideo"").scrollIntoView({ behavior: ""smooth"", block: ""start"" });
+        }
+        </script>",False,True,False
+Cweb,d:\Cweb5,seo,Local Seo,"<center><img src=""https://clarksvilleweb.com/seo-clarksville-Tennessee-1.jpg"" style=""width: 80%; height: auto;""  alt=""local seo""></center>
+<div class=""container"">
+    <div class=""three-columns"">
+        <div class=""column"">
+            <h3>What is SEO</h3>
+            <p>Search engine optimization or SEO is a process by which we help your website rise in searches on the Internet for your product or service.
+            If your website is well-designed then you have a presentation for your customer. Often after a website is designed, the next question that arises is, “why can’t I find my website on the Internet when I search for my product or service. It is often easy to find your website when you ask for it directly but your customers, often, art asking for you but for your product or service.</p>
+        </div>
+        <div class=""column"">
+            <h3>What Affects SEO</h3>
+            <p>Search engine optimization involves goal three steps:
+            1. The words that you say on your website.
+            2. The strength of your website.
+            3. The links to your website. Links to your website are like references for a job for which you are applying. Who are you references and who are they. It’s a matter of how many websites link to you and who they are. If they are powerful, then their link to you will help you more than if they are less than powerful.
+            4. The relevance of links to you. Were the articles full of content and important and on topic.</p>
+        </div>
+        <div class=""column"">
+            <h3>How We Can Help</h3>
+            <p>We are part of a network of e-zines and websites that have been on the Internet since 1998. We can link our websites to you and we can help you say the right words in the right sequence to hit what we call “keywords”, those words that your customer is asking for. Often this work is extensive requiring lots of time and effort. We become your biggest fan, the blogger who is excited about you, the writer who writes about you and links to you. Our goal is to make your phone ring.</p>
+        </div>
+    </div>
+    <div class=""two-columns"">
+        <div class=""wide-column"" style=""text-align: center;"">
+            <img src=""https://clarksvilleweb.com/seo.jpg""style=""width: 50%; height: auto;"" ></div>
+        <div class=""narrow-column"">
+            <h4>It’s a partnership this making a phone ring.</h4>
+            <p>The business of SEO is a business of helping people generate leads through phone calls or contacts that come from search engines and local maps and searches for local keywords. A local keyword example is “used car”. This search will produce a map. If that is your product you want to be on that map.</p>
+        </div>
+    </div>
+    <div class=""two-columns"" >
+        <div class=""narrow-column"">
+            <h4>How does this start?</h4>
+            <p>We evaluate your current position and advise you of what you can do without us. Sometimes it is a process of linking and waiting for Google or other search engines to recognize articles or links that we have introduced for you. We can install certain plug-ins that can help and, if needed, we can rearrange the words on your site such that you’re ready on your end.</p></div>
+        <div class=""wide-column"" style=""text-align: center;"">
+            <img src=""https://clarksvilleweb.com/Local-Search-Marketing.jpg"" style=""width: 60%; height: auto;"" >
+        </div>
+    </div>
+</div>",,,"<a href=""https://clarksvilleweb.com/"" aria-current=""page"">Web Design Clarksville</a>
+<a href=""https://clarksvilleweb.com/website-design/"">Website Design</a>
+<a href=""https://clarksvilleweb.com/seo/"">SEO</a>
+<a href=""https://clarksvilleweb.com/contact/"">Contact Us</a>","<a href=""https://clarksvilleweb.com/""><img src=""https://clarksvilleweb.com/design-websites-clarksville.jpg"" width=""200"" height=""85""  border=""0"" alt=""local_seo"" /></a>
+
+
+
+
+
+","<ul>
+ 	<li class=""no-label"">
+<div><a href=""mailto:support@clarksvilleweb.com"">support@clarksvilleweb.com</a></li>
+ 	<li>
+(615)663-9558</div></li>
+</ul>",https://webster123.com/stylesheets/webster1.css,,html,,,clarksvilleweb.com,https://clarksvilleweb.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script>","<!-- AddToAny BEGIN -->
+<a class=""a2a_dd"" href=""https://www.addtoany.com/share""><img src=""https://static.addtoany.com/buttons/share_save_171_16.png"" width=""171"" height=""16"" border=""0"" alt=""Share""></a>
+<script async src=""https://static.addtoany.com/menu/page.js""></script>
+<!-- AddToAny END --><br>
+  <script>
+        function changeVideo(videoUrl, event) {
+          event.preventDefault();
+          document.getElementById(""largeVideo"").src = videoUrl;
+          document.getElementById(""largeVideo"").scrollIntoView({ behavior: ""smooth"", block: ""start"" });
+        }
+        </script>",False,True,False
+Cweb,d:\Cweb5,contact,Contact Us,,"<center><img src=""https://clarksvilleweb.com/dave.jpg""><br>Contact Dave Jackson</center><br>","<center><img src=""https://clarksvilleweb.com/contact.jpg""><br>","<a href=""https://clarksvilleweb.com/"" aria-current=""page"">Web Design Clarksville</a>
+<a href=""https://clarksvilleweb.com/website-design/"">Website Design</a>
+<a href=""https://clarksvilleweb.com/seo/"">SEO</a>
+<a href=""https://clarksvilleweb.com/contact/"">Contact Us</a>","<a href=""https://clarksvilleweb.com/""><img src=""https://clarksvilleweb.com/design-websites-clarksville.jpg"" width=""200"" height=""85""  border=""0"" alt=""local_seo"" /></a>
+
+
+
+
+
+","<ul>
+ 	<li class=""no-label"">
+<div><a href=""mailto:support@clarksvilleweb.com"">support@clarksvilleweb.com</a></li>
+ 	<li>
+(615)663-9558</div></li>
+</ul>",https://webster123.com/stylesheets/webster1.css,,html,,,clarksvilleweb.com,https://clarksvilleweb.com/,https://clarksvilleweb.com/iconweb.jpg,"<!doctype html>
+<html lang=""en-US"" xmlns:og=""https://ogp.me/ns#"" xmlns:fb=""https://ogp.me/ns/fb#"">
+
+","<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src=""https://www.googletagmanager.com/gtag/js?id=UA-36043931-7""></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36043931-7');
+</script>","<!-- AddToAny BEGIN -->
+<a class=""a2a_dd"" href=""https://www.addtoany.com/share""><img src=""https://static.addtoany.com/buttons/share_save_171_16.png"" width=""171"" height=""16"" border=""0"" alt=""Share""></a>
+<script async src=""https://static.addtoany.com/menu/page.js""></script>
+<!-- AddToAny END --><br>
+  <script>
+        function changeVideo(videoUrl, event) {
+          event.preventDefault();
+          document.getElementById(""largeVideo"").src = videoUrl;
+          document.getElementById(""largeVideo"").scrollIntoView({ behavior: ""smooth"", block: ""start"" });
+        }
+        </script>",False,True,False
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
